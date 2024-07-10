@@ -1,0 +1,15 @@
+.videoWrapper {
+  align-items: center;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+  
+  .raVideo {
+    opacity: 0.5;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 48rem;
+  }
+}

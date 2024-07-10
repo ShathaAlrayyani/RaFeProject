@@ -1,0 +1,90 @@
+/* @import url('./components/Header/Header.css');
+@import url('./components/VideoBg/VideoBg.css');
+@import url('./components/Slider/Slider.css');
+@import url('./components/ContentCard/ContentCard.css');
+@import url('./components/Card/Card.css');
+@import url('./components/Modal/Modal.css'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --background-color: rgb(255 255 255);
+  --primary-color: #1E1A3D;
+  --header-z-index:20;
+  --modal-z-index:30;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: var(--background-color);
+  overflow: hidden;
+
+  ::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Color of the scrollbar thumb */
+    border-radius: 6px; /* Border radius of the scrollbar thumb */
+  }
+}
+
+* {
+  font-family: system-ui;
+}
+
+.appWrapper {
+  height: 100vh;
+  margin-top: 60px;
+  overflow: auto;
+  padding-bottom: 60px;
+  width: 100%;
+
+  .videoOverlay {
+    background-color: black;
+    height: 100%;
+    opacity: 50%;
+    position: absolute;
+    width: 100%;
+  }
+
+  .videoContainer {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    padding: 32px;
+    width: 100%;
+  }
+
+  .appCardsWrapper {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    height: 100%;
+    justify-content: center;
+    overflow: auto;
+    padding: 24px;
+    width: 100%;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

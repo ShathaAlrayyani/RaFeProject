@@ -1,0 +1,30 @@
+.appCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 200px;
+    width: 200px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.cardTitle {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.svgIcon {
+    fill: var(--primary-color);
+    width: 80px;
+    height: 80px;
+}
+
+.appCardHover {
+    transform: scale(1.1);
+}
