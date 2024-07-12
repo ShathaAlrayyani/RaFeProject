@@ -1,0 +1,19 @@
+/* mixins.module.css */
+:root {
+    --mobile-width: 768px;
+  }
+  
+  /* Mixin for mobile styles */
+  .mobile {
+    @media (max-width: var(--mobile-width)) {
+      /* Your mobile styles go here */
+    }
+  }
+  
+  /* Mixin for desktop styles */
+  .desktop {
+    @media (min-width: calc(var(--mobile-width) + 1px)) {
+      /* Your desktop styles go here */
+    }
+  }
+  

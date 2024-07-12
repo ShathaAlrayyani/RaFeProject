@@ -1,15 +1,53 @@
 .videoWrapper {
   align-items: center;
   display: flex;
-  position: absolute;
   justify-content: center;
-  /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
-  
-  .raVideo {
-    opacity: 0.5;
-  }
+  box-shadow: rgb(14 30 37 / 12%) 0px 2px 4px 0px, rgb(14 30 37 / 32%) 0px 2px 16px 0px;
+}
 
-  @media screen and (max-width: 768px) {
-    max-width: 48rem;
-  }
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.raVideo {
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.playPauseButton {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.progressContainer {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
+}
+
+.progressBar {
+  background-color: #291818;
+  height: 100%;
+}
+
+.time {
+  color: rgb(138, 70, 70);
 }

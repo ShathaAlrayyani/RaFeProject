@@ -1,7 +1,7 @@
 "use client"
 import React, { useRef, useEffect } from "react";
-import ReactDOM from "react-dom";
-import styles from './Modal.module.css'
+import styles from './Modal.module.css';
+import CloseIcon from '../../assets/closeCircle.svg'
 
 export interface IModalProps {
   isOpen: boolean;
@@ -10,41 +10,32 @@ export interface IModalProps {
 }
 
 export const AppModal = ({ isOpen, onClose, children }: IModalProps) => {
-  const modalRootRef = useRef<HTMLDivElement | null>(null);
   const modalRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    if (typeof document !== 'undefined') {
-      const modalRoot = document.createElement("div");
-      modalRootRef.current = modalRoot;
-      document.body.appendChild(modalRoot);
+    const handleClickOutside = (event: MouseEvent) => {
+      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+        onClose();
+      }
+    };
 
-      const handleClickOutside = (event: MouseEvent) => {
-        if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
-          onClose();
-        }
-      };
+    document.addEventListener("mousedown", handleClickOutside);
 
-      document.addEventListener("mousedown", handleClickOutside);
-
-      return () => {
-        document.body.removeChild(modalRoot);
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
-    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, [onClose]);
 
-  if (!isOpen || !modalRootRef.current) return null;
+  if (!isOpen) return null;
 
-  return ReactDOM.createPortal(
-    <div ref={modalRef} className={styles.modalOverlay}>
-      <div className={styles.modal}>
+  return (
+    <div className={styles.modalOverlay}>
+      <div ref={modalRef} className={styles.modal}>
         <button className={styles.closeButton} onClick={onClose}>
-          Close
+          <CloseIcon className={styles.closeIcon}/>
         </button>
         {children}
       </div>
-    </div>,
-    modalRootRef.current
+    </div>
   );
 };
