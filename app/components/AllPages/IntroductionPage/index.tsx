@@ -1,12 +1,13 @@
 import Image from "next/image";
 import AboutUsImg from "../../../assets/logoExtra/colored/out02.png";
 import styles from "./IntroductionPage.module.css";
-import { useState } from "react";
+import { useState} from "react";
 import { VideoBg } from "../../VideoBg";
 import { AppModal } from "../../Modal";
 import { Button, ButtonStyles } from "../../Button";
 
 interface ISlideProps {}
+
 export const IntroductionPage = ({}: ISlideProps) => {
   const [isCardModalOpen, setIsCardModalOpen] = useState<boolean>(false);
 
@@ -17,6 +18,7 @@ export const IntroductionPage = ({}: ISlideProps) => {
   const handleModalClose = () => {
     setIsCardModalOpen(false);
   };
+
   return (
     <>
       <AppModal isOpen={isCardModalOpen} onClose={handleModalClose}>
