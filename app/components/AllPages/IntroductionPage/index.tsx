@@ -5,7 +5,6 @@ import { useState } from "react";
 import { VideoBg } from "../../VideoBg";
 import { AppModal } from "../../Modal";
 import { Button, ButtonStyles } from "../../Button";
-import VideoIcon from "../../../assets/extraIcons/video-svgrepo-com.svg";
 
 interface ISlideProps {}
 export const IntroductionPage = ({}: ISlideProps) => {
@@ -24,7 +23,6 @@ export const IntroductionPage = ({}: ISlideProps) => {
         <VideoBg />
       </AppModal>
       <div className={styles.aboutUsWrapper}>
-        {/* <VideoIcon className={styles.videoSvg}/> */}
         <Image src={AboutUsImg} alt="about us" className={styles.aboutUsImg} />
         <div className={styles.content}>
           <div className={styles.title}>
