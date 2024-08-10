@@ -1,18 +1,23 @@
-import style from './Button.module.css'
+import style from "./Button.module.css";
 
-export enum ButtonStyles {
-    PRIMARY = 'primary',
-    SECONDARY = 'secondary'
+export enum ButtonVarients {
+  PRIMARY = "primary",
+  SECONDARY = "secondary",
+  TAB_BUTTON = "tabButton"
 }
 
 interface IButtonProps {
-    btnStyle : ButtonStyles
-    children: any
-    onClick : ()=> void
+  btnStyle: ButtonVarients;
+  children: any;
+  isActiveTab?:boolean
+  onClick: () => void;
 }
 
-export const Button = ({btnStyle, children, onClick}: IButtonProps) => {
+export const Button = ({ btnStyle, children, isActiveTab=false, onClick }: IButtonProps) => {
+  
   return (
-    <button className={style[btnStyle]} onClick={onClick}>{children}</button>
-  )
-}
+    <button className={style[btnStyle]} onClick={onClick}>
+      {children}
+    </button>
+  );
+};

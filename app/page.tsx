@@ -5,9 +5,9 @@ import {
   AppSlider,
   IntroductionPage,
   MissionVisionPage,
+  TeamCompanyPage,
 } from "./components";
 import { SwiperSlide } from "swiper/react";
-import BgImage from './assets/bgImg.png'
 
 export default function Home() {
 
@@ -16,15 +16,21 @@ export default function Home() {
       <main>
         <Header />
         <main className="appWrapper">
-        <Image src={BgImage} alt="about us" className='bgImage' />
-          <AppSlider>
+        {/* <Image src={BgImage} alt="about us" className='bgImage' /> */}
+        <IntroductionPage/>
+        {/* <MissionVisionPage/>
+        <TeamCompanyPage/> */}
+          {/* <AppSlider>
               <SwiperSlide>
                 <IntroductionPage/>
               </SwiperSlide>
               <SwiperSlide>
                 <MissionVisionPage/>
               </SwiperSlide>
-          </AppSlider>
+              <SwiperSlide>
+                <TeamCompanyPage/>
+              </SwiperSlide>
+          </AppSlider> */}
         </main>
       </main>
     </>

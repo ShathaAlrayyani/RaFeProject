@@ -4,21 +4,15 @@
 
 :root {
   --background-color: rgb(255 255 255);
+  --gray-color: rgb(132 133 134);
   --header-z-index:20;
   --modal-z-index:30;
-  --primary-color-opacity20: rgb(14 2 83 / 50%);
-  --primary-color: rgb(14 2 83);
-  --secondary-color: rgb(18 177 177);
+  --primary-color-opacity20: rgb(10 36 35 / 50%);
+  --primary-color: rgb(10 36 35);
+  --secondary-color-opacity20: rgb(247 72 7 / 50%);
+  --secondary-color: rgb(247 72 7);
   --white-color: rgb(255 255 255); 
 }
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
 
 body {
   color: rgb(var(--foreground-rgb));
