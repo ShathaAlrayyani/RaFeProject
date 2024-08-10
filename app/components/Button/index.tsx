@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import style from "./Button.module.css";
 
 export enum ButtonVarients {
@@ -10,13 +11,13 @@ interface IButtonProps {
   btnStyle: ButtonVarients;
   children: any;
   isActiveTab?:boolean
-  onClick: () => void;
+  onClick: (e:any) => void;
 }
 
 export const Button = ({ btnStyle, children, isActiveTab=false, onClick }: IButtonProps) => {
   
   return (
-    <button className={style[btnStyle]} onClick={onClick}>
+    <button className={classNames(style[btnStyle], { [style.activeTab] : isActiveTab })} onClick={onClick}>
       {children}
     </button>
   );
