@@ -17,7 +17,7 @@
     gap: 20px;
     height: 100%;
     overflow: auto;
-    padding: 30px;
+    padding: 100px 30px;
     position: relative;
     width: 100%;
 
@@ -109,6 +109,7 @@
 @media (max-width: 768px) {
     .aboutUsWrapper {
         flex-wrap: wrap;
+        padding: 30px;
     }
 
     .aboutUsImg {

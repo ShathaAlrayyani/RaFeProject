@@ -22,12 +22,12 @@ export const keyServices = [
   {
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
     icon: ServiceIcon,
-    title: "Post-production",
+    title: "Post Production",
   },
   {
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
     icon: CameraIcon,
-    title: "Podcast production",
+    title: "Podcast Production",
   },
   {
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
@@ -37,6 +37,6 @@ export const keyServices = [
   {
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
     icon: PicturesIcon,
-    title: "Motion graphics",
+    title: "Motion Graphics",
   },
 ];
