@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const TeamCompanySection = () => {
   return (
-    <div className={styles.teamCompanyWrapper}  data-aos="fade-up">
+    <div className={styles.teamCompanyWrapper} >
       Team & Company
       {/* <Image src={TeamImg} alt="about us" className={styles.img} /> */}
     </div>

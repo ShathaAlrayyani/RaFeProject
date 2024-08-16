@@ -9,7 +9,7 @@ const imgSrc =
 
 export const KeyServicesSection = () => {
   return (
-    <div className={styles.keyServicesSectionWrapper} data-aos="fade-up" >
+    <div className={styles.keyServicesSectionWrapper} >
       <h1 className={styles.title}>Key Services</h1>
       <div className={styles.cardsWrapper}>
         {keyServices.map((item, i) => (
