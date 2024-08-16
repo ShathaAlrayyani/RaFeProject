@@ -1,0 +1,136 @@
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(10);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.aboutUsWrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    overflow: auto;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+
+    .buttonWrapper {
+        padding-right: 30px;
+    }
+}
+
+.blueBgWrapper {
+    bottom: 0;
+    fill: var(--primary-color);
+    height: 50%;
+    left: 50%;
+    position: absolute;
+    stroke: var(--primary-color);
+    transform: translate(-50%, 0);
+    width: 100%;
+    z-index: -1;
+}
+
+.bgImage {
+    border-radius: 20px;
+    bottom: 20px;
+    height: 66%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 70%;
+}
+
+.blueBg{
+    background-color: var(--primary-color);
+    bottom: 0;
+    height: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    font-size: 18px;
+    gap: 20px;
+    padding: 30px 20px;
+    width: 100%;
+
+    .title {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutUsTitle {
+        color: var(--primary-color);
+        font-size: 32px;
+        font-weight: 700;
+        text-wrap: nowrap;
+    }
+
+    .orangeTitle {
+        color: var(--secondary-color);
+    }
+
+    .contentWrapper {
+        align-items: end;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .arText {
+        text-align: right;
+    }
+
+    .enText {
+        color: var(--gray-color);
+        padding-top: 24px;
+    }
+
+    .textTitle {
+        font-weight: 600;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .aboutUsWrapper {
+        flex-wrap: wrap;
+    }
+
+    .aboutUsImg {
+        animation: float 1.7s ease-in-out infinite;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        max-height: 30%;
+        max-width: 400px;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 10;
+    }
+
+    .bgImage {
+        border-radius: 0;
+        height: 40%;
+        width: 100%;
+    }
+
+    .enText {
+        padding-top: 0;
+    }
+}

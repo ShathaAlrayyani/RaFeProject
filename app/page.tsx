@@ -5,6 +5,7 @@ import {
   AppSlider,
   Header,
   IntroductionSection,
+  KeyServicesSection,
   MissionVisionSection,
   TeamCompanySection,
 } from "./components";
@@ -19,6 +20,7 @@ export default function Home() {
           <IntroductionSection />
           <AboutUsSection />
           <MissionVisionSection />
+          <KeyServicesSection />
           <TeamCompanySection />
           {/* <AppSlider>
               <SwiperSlide>

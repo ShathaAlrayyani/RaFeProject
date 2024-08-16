@@ -1,0 +1,66 @@
+.missionVisionWrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+    width: 100%; 
+}
+
+.sectionWrapper {
+    align-items: center;
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+
+    .title {
+        color: var(--secondary-color);
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .card {
+        backdrop-filter: blur(5px);
+        background-color: var(--white-color-opacity30);
+        border-radius: 20px;
+        color: var(--white-color);
+        font-size: 20px;
+        padding: 40px;
+        width: 50%;
+    }
+}
+
+.bgImg {
+    height: 100%;
+    opacity: 50%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.bgOverlay {
+    background-color:black ;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .missionVisionWrapper {
+        padding: 30px 0;
+    }
+
+    .sectionWrapper {
+        flex-direction: column-reverse;
+
+        .card {
+            border-radius: 0;
+            width: 100%;
+        }
+    }
+}

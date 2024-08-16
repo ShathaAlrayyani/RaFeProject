@@ -1,33 +1,42 @@
-import AboutUsIcon from '../assets/corporate.svg'
-import TargetIcon from '../assets/bullseye-arrow.svg'
-import ContactUsIcon from '../assets/address-book.svg'
-import TeamIcon from '../assets/users-solid.svg'
-import ClientIcon from '../assets/customer-care.svg'
-import ServiceIcon from '../assets/lead-management.svg'
 
-export const allCards = [
+import CameraIcon from '../assets/cameraIcon.svg'
+import ActionIcon from '../assets/actionIcon.svg'
+import ServiceIcon from '../assets/servicesIcon.svg'
+import FilmIcon from '../assets/filmWithPlay.svg'
+import PicturesIcon from '../assets/picturesIcon.svg'
+import PicIcon from '../assets/tvWithPeople.svg'
+
+
+export const keyServices = [
   {
-    title:'About Us',
-    icon: AboutUsIcon,
+    content:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    icon: FilmIcon,
+    title: "Cinematography",
   },
   {
-    title:'Mission & Vision',
-    icon: TargetIcon,
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    icon: ActionIcon,
+    title: "Production",
   },
   {
-    title:'Our Team',
-    icon: TeamIcon,
-  },
-  {
-    title:'Key Services',
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
     icon: ServiceIcon,
+    title: "Post-production",
   },
   {
-    title:'Key Clients',
-    icon: ClientIcon,
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    icon: CameraIcon,
+    title: "Podcast production",
   },
   {
-    title:'Contact Us',
-    icon: ContactUsIcon,
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    icon: PicIcon,
+    title: "Renting",
   },
-]
+  {
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+    icon: PicturesIcon,
+    title: "Motion graphics",
+  },
+];
