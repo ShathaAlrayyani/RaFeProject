@@ -1,8 +1,8 @@
 import Image from "next/image";
 // import TeamImg from "../../../assets/photos/_MG_3613.jpg"
-import styles from "./MissionVisionPage.module.css";
+import styles from "./MissionVisionSection.module.css";
 
-export const MissionVisionPage = () => {
+export const MissionVisionSection = () => {
   return (
     <div className={styles.missionVisionWrapper}>
       Mission & Vision

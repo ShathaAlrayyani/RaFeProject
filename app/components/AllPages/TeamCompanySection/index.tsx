@@ -1,8 +1,8 @@
-import styles from "./TeamCompanyPage.module.css";
+import styles from "./TeamCompanySection.module.css";
 // import TeamImg from "../../../assets/photos/_MG_3621.jpg"
 import Image from "next/image";
 
-export const TeamCompanyPage = () => {
+export const TeamCompanySection = () => {
   return (
     <div className={styles.teamCompanyWrapper}>
       Team & Company

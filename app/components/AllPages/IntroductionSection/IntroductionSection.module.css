@@ -20,6 +20,10 @@
     width: 100%;
     overflow: auto;
     flex-direction: column;
+
+    .buttonWrapper {
+        padding-right: 30px;
+    }
 }
 
 .blueBgWrapper {
@@ -47,11 +51,20 @@
     bottom: 20px;
     left: 50%;
     height: 66%;
-    width: 60%;
+    width: 70%;
     transform: translate(-50%, 0);
     border-radius: 20px;
 }
 
+.blueBg{
+    background-color: var(--primary-color);
+    bottom: 0;
+    height: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 100%;
+}
 
 .content {
     font-size: 18px;
@@ -93,6 +106,7 @@
 
     .enText {
         color: var(--gray-color);
+        padding-top: 24px;
     }
 
     .textTitle {
@@ -110,7 +124,7 @@
         animation: float 1.7s ease-in-out infinite;
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-        max-height: 60%;
+        max-height: 30%;
         max-width: 400px;
     }
 
@@ -121,5 +135,11 @@
 
     .bgImage {
         height: 40%;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .enText {
+        padding-top: 0;
     }
 }

@@ -1,34 +1,37 @@
 "use client";
 import Image from "next/image";
 import {
-  Header,
+  AboutUsSection,
   AppSlider,
-  IntroductionPage,
-  MissionVisionPage,
-  TeamCompanyPage,
+  Header,
+  IntroductionSection,
+  MissionVisionSection,
+  TeamCompanySection,
 } from "./components";
 import { SwiperSlide } from "swiper/react";
 
 export default function Home() {
-
   return (
     <>
       <main>
-        <Header />
+        <Header acivePage="Home" />
         <main className="appWrapper">
-        {/* <Image src={BgImage} alt="about us" className='bgImage' /> */}
-        <IntroductionPage/>
-        {/* <MissionVisionPage/>
-        <TeamCompanyPage/> */}
+          <IntroductionSection />
+          <AboutUsSection />
+          <MissionVisionSection />
+          <TeamCompanySection />
           {/* <AppSlider>
               <SwiperSlide>
-                <IntroductionPage/>
+                <IntroductionSection />
               </SwiperSlide>
               <SwiperSlide>
-                <MissionVisionPage/>
+                <AboutUsSection />
               </SwiperSlide>
               <SwiperSlide>
-                <TeamCompanyPage/>
+                <MissionVisionSection />
+              </SwiperSlide>
+              <SwiperSlide>
+                <TeamCompanySection />
               </SwiperSlide>
           </AppSlider> */}
         </main>

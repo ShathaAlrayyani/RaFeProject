@@ -1,13 +1,14 @@
 import Image from "next/image";
-import styles from "./IntroductionPage.module.css";
+import styles from "./IntroductionSection.module.css";
 import { useState } from "react";
 import { VideoBg } from "../../VideoBg";
 import { AppModal } from "../../Modal";
 import { Button, ButtonVarients } from "../../Button";
 import BuleBg from "../../../assets/FirstBgBlue.svg";
 
-const imgSrc = "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Photos/_MG_3533.jpg"
-export const IntroductionPage = () => {
+const imgSrc = "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Photos/_MG_7306.jpg"
+
+export const IntroductionSection = () => {
   const [isCardModalOpen, setIsCardModalOpen] = useState<boolean>(false);
 
   const handleOnCardClick = () => {
@@ -25,7 +26,7 @@ export const IntroductionPage = () => {
       </AppModal>
 
       <div className={styles.aboutUsWrapper}>
-        <BuleBg className={styles.blueBgWrapper} />
+        <div className={styles.blueBg}/>
         <Image 
         alt="about us" 
         className={styles.bgImage} 

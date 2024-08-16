@@ -1,3 +1,4 @@
-export * from './IntroductionPage'
-export * from './MissionVisionPage'
-export * from './TeamCompanyPage'
+export * from './AboutUsSection'
+export * from './IntroductionSection'
+export * from './MissionVisionSection'
+export * from './TeamCompanySection'
