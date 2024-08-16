@@ -24,7 +24,7 @@ export const IntroductionSection = () => {
         <VideoBg />
       </AppModal>
 
-      <div className={styles.aboutUsWrapper}>
+      <div className={styles.aboutUsWrapper} data-aos="fade-right">
         <div className={styles.blueBg}/>
         <Image 
         alt="about us" 

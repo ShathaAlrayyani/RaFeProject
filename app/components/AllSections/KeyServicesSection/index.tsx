@@ -9,11 +9,11 @@ const imgSrc =
 
 export const KeyServicesSection = () => {
   return (
-    <div className={styles.keyServicesSectionWrapper}>
+    <div className={styles.keyServicesSectionWrapper} data-aos="fade-up" >
       <h1 className={styles.title}>Key Services</h1>
       <div className={styles.cardsWrapper}>
         {keyServices.map((item, i) => (
-          <div className={styles.card} key={`service-${i + 1}`}>
+          <div className={styles.card} key={`service-${i + 1}`} >
             <div className={styles.firstCard}>
               <VerticalLine className={styles.leftLine}/>
               <VerticalLine className={styles.rightLine}/>

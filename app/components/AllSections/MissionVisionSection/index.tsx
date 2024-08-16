@@ -1,13 +1,18 @@
 import Image from "next/image";
 // import TeamImg from "../../../assets/photos/_MG_3613.jpg"
 import styles from "./MissionVisionSection.module.css";
-
 const imgSrc =
   "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Photos/_MG_3366.jpg";
 
 export const MissionVisionSection = () => {
   return (
-    <div className={styles.missionVisionWrapper}>
+    <div
+      className={styles.missionVisionWrapper}
+      data-aos="fade-left"
+      data-aos-anchor="#example-anchor"
+      data-aos-offset="500"
+      data-aos-duration="500"
+    >
       <div className={styles.bgOverlay}></div>
       <Image
         alt="about us"

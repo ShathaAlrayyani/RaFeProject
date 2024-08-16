@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import styles from "./AboutUsSection.module.css";
 
@@ -5,8 +6,9 @@ const imgSrc =
   "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Photos/_MG_3533.jpg";
 
 export const AboutUsSection = () => {
+
   return (
-    <div className={styles.aboutUsSectionWrapper}>
+    <div className={styles.aboutUsSectionWrapper} data-aos="fade-up" data-aos-duration="3000">
         <div className={styles.aboutUsOrangeBg}/>
         <Image
         alt="about us"
@@ -15,7 +17,7 @@ export const AboutUsSection = () => {
         src={imgSrc}
         width={1400}
       />
-      <div className={styles.aboutUsContent}>
+      <div className={styles.aboutUsContent} >
         <h1 className={styles.title}>About</h1>
         <h2 className={styles.subTitle}>RA is an art production company based in Amman-Jordan.</h2>
         <p className={styles.contant}>
