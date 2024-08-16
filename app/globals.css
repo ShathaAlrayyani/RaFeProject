@@ -13,6 +13,7 @@
   --secondary-color-opacity20: rgb(247 72 7 / 50%);
   --secondary-color: rgb(247 72 7);
   --white-color: rgb(255 255 255); 
+  --white-color-opacity30: rgb(255 255 255 / 30%); 
 }
 
 body {
