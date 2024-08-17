@@ -1,9 +1,31 @@
 "use client";
 import { Fragment } from "react";
 import {
+  AboutUsSection,
   Header,
+  IntroductionSection,
+  KeyServicesSection,
+  MissionVisionSection,
+  TeamCompanySection,
 } from "./components";
-import { sectionsElements } from "./constants/mainPage";
+
+const sectionsElements = [
+  {
+    Component: <IntroductionSection />,
+  },
+  {
+    Component: <AboutUsSection />,
+  },
+  {
+    Component: <MissionVisionSection />,
+  },
+  {
+    Component: <KeyServicesSection />,
+  },
+  {
+    Component: <TeamCompanySection />,
+  },
+];
 
 export default function Home() {
 
