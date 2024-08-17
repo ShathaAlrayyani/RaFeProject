@@ -1,0 +1,27 @@
+.ourClientWrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.sectionTitle {
+    width: fit-content;
+    color: var(--secondary-color);
+    font-size: 32px;
+    font-weight: 600;
+    border-bottom: 1px solid var(--secondary-color);
+}

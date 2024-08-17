@@ -6,6 +6,7 @@ import {
   IntroductionSection,
   KeyServicesSection,
   MissionVisionSection,
+  OurClientsSection,
   TeamCompanySection,
 } from "./components";
 
@@ -24,6 +25,9 @@ const sectionsElements = [
   },
   {
     Component: <TeamCompanySection />,
+  },
+  {
+    Component: <OurClientsSection />,
   },
 ];
 

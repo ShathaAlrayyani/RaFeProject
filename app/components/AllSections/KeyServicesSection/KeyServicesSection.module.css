@@ -120,7 +120,9 @@
 }
 
 .cardBgImage {
+    filter: blur(2px);
     height: 100%;
+    object-fit: cover;
     opacity: 60%;
     position: absolute;
     width: 100%;

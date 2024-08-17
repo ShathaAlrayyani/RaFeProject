@@ -13,6 +13,7 @@
     .bgImage {
         border-radius: 15px;
         left: 150px;
+        object-fit: cover;
         position: absolute;
         width: 500px;
         z-index: 2;

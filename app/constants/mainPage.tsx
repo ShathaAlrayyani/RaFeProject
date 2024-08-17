@@ -1,5 +1,4 @@
 
-import { AboutUsSection, IntroductionSection, KeyServicesSection, MissionVisionSection, TeamCompanySection } from '../components'
 import ActionIcon from '../assets/actionIcon.svg'
 import CameraIcon from '../assets/cameraIcon.svg'
 import FilmIcon from '../assets/filmWithPlay.svg'
@@ -7,8 +6,18 @@ import PicIcon from '../assets/tvWithPeople.svg'
 import PicturesIcon from '../assets/picturesIcon.svg'
 import ServiceIcon from '../assets/servicesIcon.svg'
 
+export interface OurClientBrand {
+  brandImgSrc : string
+  brandName : string
+}
 
-export const keyServices = [
+export interface KeyService {
+  content: string
+  icon: any 
+  title: string
+}
+
+export const keyServices : KeyService[] = [
   {
     content:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore",
@@ -42,20 +51,16 @@ export const keyServices = [
   },
 ];
 
-export const sectionsElements = [
+export const ourUaeClients: OurClientBrand[] =[
   {
-    Component: <IntroductionSection />,
+    brandImgSrc:'',
+    brandName:'',
   },
+]
+
+export const ourJorClients: OurClientBrand[] =[
   {
-    Component: <AboutUsSection />,
+    brandImgSrc:'',
+    brandName:'',
   },
-  {
-    Component: <MissionVisionSection />,
-  },
-  {
-    Component: <KeyServicesSection />,
-  },
-  {
-    Component: <TeamCompanySection />,
-  },
-];
+]
