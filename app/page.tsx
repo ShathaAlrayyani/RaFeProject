@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { Fragment, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {
@@ -46,7 +46,9 @@ export default function Home() {
     <main>
       <Header acivePage="Home" />
       <main className="appWrapper">
-        {sectionsElements.map((section) => section.component)}
+        {sectionsElements.map((section, index) => (
+          <Fragment key={index + 123}>{section.component}</Fragment>
+        ))}
         {/* <AppSlider>
           {sectionsElements.map((section, i) => (
             <SwiperSlide key={`section-${i}`}>{section.component}</SwiperSlide>
