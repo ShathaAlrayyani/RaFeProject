@@ -1,18 +1,21 @@
 .aboutUsSectionWrapper {
     align-items: center;
+    background-color: var(--white-color);
     display: flex;
     gap: 32px;
     height: 100%;
     justify-content: right;
     overflow: hidden;
     position: relative;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     width: 100%;
-    
+
     .bgImage {
         border-radius: 15px;
         left: 150px;
         position: absolute;
         width: 500px;
+        z-index: 2;
     }
 
     .aboutUsContent {
@@ -22,6 +25,7 @@
         gap: 32px;
         padding: 180px 100px 180px 310px;
         width: 70%;
+        z-index: 1;
 
         .title {
             color: var(--secondary-color);
@@ -49,11 +53,21 @@
         top: 50%;
         transform: translate(0, -50%);
         width: 600px;
-        z-index: -1;
+        /* z-index: -1; */
     }
 }
 
-@media (max-width: 1024px) { 
+.hidden {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (max-width: 1024px) {
     .aboutUsSectionWrapper {
         flex-direction: column-reverse;
         gap: 0;
@@ -71,4 +85,3 @@
         }
     }
 }
-

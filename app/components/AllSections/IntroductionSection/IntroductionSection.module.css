@@ -12,6 +12,7 @@
 
 .aboutUsWrapper {
     align-items: center;
+    background-color: var(--white-color);
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -19,11 +20,22 @@
     overflow: auto;
     padding: 100px 30px;
     position: relative;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
     width: 100%;
 
     .buttonWrapper {
         padding-right: 30px;
     }
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .blueBgWrapper {
@@ -48,7 +60,7 @@
     width: 70%;
 }
 
-.blueBg{
+.blueBg {
     background-color: var(--primary-color);
     bottom: 0;
     height: 40%;

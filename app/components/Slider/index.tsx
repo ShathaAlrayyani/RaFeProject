@@ -1,11 +1,10 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import './Slider.css'
 import { EffectFade, Navigation, Pagination, Scrollbar, Mousewheel } from "swiper/modules";
-
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
+import styles from './Slider.module.css'
 
 interface IAppSliderProps {
   children: any
@@ -13,18 +12,21 @@ interface IAppSliderProps {
 
 export const AppSlider = ({children}: IAppSliderProps) => {
   return (
-    <div className="sliderContainer">
+    <div className={styles.sliderContainer}>
       <Swiper
+        autoHeight={true}
+        direction={'vertical'}
+        effect={'fade'}
+        mousewheel={true}
         slidesPerView={1}
         spaceBetween={30}
-        mousewheel={true}
         pagination={{
           clickable: true,
           dynamicBullets: true,
         }}
-        loop={true}
-        modules={[Mousewheel, Pagination]}
-        className="mySwiperProject"
+        loop={false}
+        modules={[EffectFade, Mousewheel, Pagination]}
+        className={styles.mySwiperProject}
       >
         {children}
       </Swiper>

@@ -11,12 +11,33 @@ import {
   MissionVisionSection,
   TeamCompanySection,
 } from "./components";
+import { SwiperSlide } from "swiper/react";
+
+export const sectionsElements = [
+  {
+    component: <IntroductionSection />,
+  },
+  {
+    component: <AboutUsSection />,
+  },
+  {
+    component: <MissionVisionSection />,
+  },
+  {
+    component: <KeyServicesSection />,
+  },
+  {
+    component: <TeamCompanySection />,
+  },
+];
 
 export default function Home() {
   useEffect(() => {
     AOS.init({
       easing: "ease-in-cubic",
       offset: 50,
+      disableMutationObserver: true, // Optional: Disable auto-application of styles
+      startEvent: "DOMContentLoaded",
     });
     AOS.refresh();
   }, []);
@@ -25,11 +46,12 @@ export default function Home() {
     <main>
       <Header acivePage="Home" />
       <main className="appWrapper">
-        <IntroductionSection />
-        <AboutUsSection />
-        <MissionVisionSection />
-        <KeyServicesSection />
-        <TeamCompanySection />
+        {sectionsElements.map((section) => section.component)}
+        {/* <AppSlider>
+          {sectionsElements.map((section, i) => (
+            <SwiperSlide key={`section-${i}`}>{section.component}</SwiperSlide>
+          ))}
+        </AppSlider> */}
       </main>
     </main>
   );
