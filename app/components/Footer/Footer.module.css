@@ -1,0 +1,62 @@
+.footerWrapper {
+    align-items: center;
+    background-color: var(--primary-color);
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    min-height: 240px;
+    padding: 32px;
+    position: relative;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    width: 100%;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.contactUs {
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 500;
+    gap: 32px;
+    text-align: center;
+    width: fit-content;
+    z-index: 2;
+}
+
+.iconWithContent {
+    align-items: center;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+
+.iconWithContent svg {
+    fill: var(--white-color);
+    height: 50px;
+    stroke-width: 1px;
+    width: 50px;
+}
+
+.ellipseIcon, .twoLinesIcon {
+    bottom: 0;
+    opacity: 70%;
+    position: absolute;
+}
+
+.ellipseIcon {
+    left: 0;
+}
+
+.twoLinesIcon {
+    right: 0;
+}

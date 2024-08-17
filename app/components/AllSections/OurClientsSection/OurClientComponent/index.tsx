@@ -4,6 +4,7 @@ import { OurClientBrand } from "@/app/constants/mainPage";
 import styles from "./OurClientComponent.module.css";
 
 
+
 interface IOurClientsSectionProps {
   brandsImgs: OurClientBrand[];
   title: string

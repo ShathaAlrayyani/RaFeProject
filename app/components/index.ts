@@ -1,6 +1,7 @@
 export * from './Button'
 export * from './Card'
 export * from './ContentCard'
+export * from './Footer'
 export * from './Modal'
 export * from './AllSections'
 export * from './Slider'

@@ -2,6 +2,7 @@
 import { Fragment } from "react";
 import {
   AboutUsSection,
+  Footer,
   Header,
   IntroductionSection,
   KeyServicesSection,
@@ -28,6 +29,9 @@ const sectionsElements = [
   },
   {
     Component: <OurClientsSection />,
+  },
+  {
+    Component: <Footer />,
   },
 ];
 
