@@ -140,11 +140,10 @@
 
 .card {
     position: relative;
-    /* Allows absolute positioning of child elements */
     overflow: hidden;
-    /* Ensures any overflow is hidden */
     width: 400px;
     height: 290px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .firstCard,
@@ -157,17 +156,14 @@
     justify-content: center;
     left: 0;
     position: absolute;
-    /* Stack the cards on top of each other */
     top: 0;
     transition: transform 0.5s ease-in-out;
-    /* Smooth animation */
     width: 100%;
 }
 
 .firstCard {
     background-color: var(--mercury-color);
     z-index: 1;
-    /* Ensure the first card is on top initially */
 
     .cardTitle {
         font-size: 24px;
@@ -219,7 +215,6 @@
 .secCard {
     background-color: var(--secondary-color-dark1);
     transform: translateY(100%);
-    /* Start with the second card positioned below the view */
 
     .cardDecription {
         font-size: 18px;
@@ -231,12 +226,10 @@
 
 .card:hover .firstCard {
     transform: translateY(-100%);
-    /* Slide the first card up on hover */
 }
 
 .card:hover .secCard {
     transform: translateY(0);
-    /* Bring the second card into view on hover */
 }
 
 @media (max-width: 768px) {

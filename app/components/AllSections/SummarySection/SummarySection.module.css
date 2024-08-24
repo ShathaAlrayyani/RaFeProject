@@ -1,0 +1,38 @@
+.summarySectionWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    padding: 90px 32px 50px;
+    flex-wrap: wrap;
+}
+
+.bgImg {
+    object-fit: cover;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.summaryContent {
+    width: 45%;
+    font-size: 20px;
+    color: var(--gray-color);
+}
+
+@media (max-width: 768px) {
+    .summarySectionWrapper {
+        padding: 0;
+        gap: 0;
+    }
+    .summaryContent {
+        width: 100%;
+        padding: 64px 32px 32px;
+    }
+
+    .bgImg {
+        width: 100%;
+        border-radius: 0;
+    }
+
+}

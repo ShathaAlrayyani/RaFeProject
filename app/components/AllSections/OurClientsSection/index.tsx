@@ -44,12 +44,12 @@ export const OurClientsSection = () => {
     >
       <TopShapeIcon className={styles.topIcon}/>
       <OurClientComponent
-        brandsImgs={ourUaeClients}
-        title={"OUR CLIENTS IN UAE"}
-      />
-      <OurClientComponent
         brandsImgs={ourJorClients}
         title={"OUR CLIENTS IN JORDAN"}
+      />
+      <OurClientComponent
+        brandsImgs={ourUaeClients}
+        title={"OUR CLIENTS IN UAE"}
       />
       <BottomShapeIcon className={styles.bottomIcon} />
     </div>

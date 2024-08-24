@@ -1,0 +1,57 @@
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-15px);
+    }
+
+    60% {
+        transform: translateY(-8px);
+    }
+}
+
+.noDataPlaceholder {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 32px;
+}
+
+.sectioIcon {
+    animation: bounce 2s ease-in-out;
+    height: 300px;
+    width: 350px;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: var(--primary-color-opacity70);
+}
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.content {
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 70%;
+}
+
+.whiteText {
+    color: var(--white-color);
+}

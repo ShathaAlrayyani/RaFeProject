@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import style from "./Button.module.css";
+import { MouseEvent } from "react";
 
 export enum ButtonVarients {
   PRIMARY = "primary",
@@ -11,7 +12,7 @@ interface IButtonProps {
   btnStyle: ButtonVarients;
   children: any;
   isActiveTab?:boolean
-  onClick: (e:any) => void;
+  onClick: (e:MouseEvent<HTMLButtonElement>) => void;
 }
 
 export const Button = ({ btnStyle, children, isActiveTab=false, onClick }: IButtonProps) => {

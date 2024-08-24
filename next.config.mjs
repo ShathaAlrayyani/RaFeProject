@@ -16,7 +16,7 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'ra-project.nyc3.cdn.digitaloceanspaces.com',
         port: '',
-        pathname: '/Photos/**',
+        pathname: '/**',
       },
     ],
   },

@@ -22,12 +22,13 @@
 }
 
 .tabButton {
-    border: none;
     background-color: transparent;
-    padding: 10px 16px;
+    border: none;
     color: var(--primary-color);
-    font-weight: 600;
     font-size: 16px;
+    font-weight: 600;
+    padding: 10px 16px;
+    text-wrap: nowrap;
 }
 
 .activeTab {
