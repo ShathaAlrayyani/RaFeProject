@@ -35,6 +35,7 @@
     }
 
     .card {
+        -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
         background-color: var(--white-color-opacity30);
         border-radius: 20px;

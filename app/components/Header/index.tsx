@@ -7,7 +7,7 @@ import Image from "next/image";
 import ImgSrc from "../../assets/logoExtra/bgImg.png";
 
 interface IHeaderProps {
-  acivePage: string;
+  acivePage?: string;
 }
 
 export const headerButtons = [
@@ -22,7 +22,7 @@ export const headerButtons = [
 ];
 
 export const Header = ({ acivePage }: IHeaderProps) => {
-  const [aciveTab, setActiveTab] = useState<string>(acivePage);
+  const [aciveTab, setActiveTab] = useState<string| undefined>(acivePage);
 
   const handleActiveTab = (title: any) => {
     setActiveTab(title);

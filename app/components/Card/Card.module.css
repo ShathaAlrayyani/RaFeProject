@@ -1,24 +1,40 @@
 .appCard {
     align-items: center;
-    background-color: var(--mercury-color);
+    background-color: var(--white-color);
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 410px;
-    justify-content: center;
+    height: 210px;
     padding: 10px;
     transition: transform 0.3s ease;
     overflow: hidden;
     width: 250px;
     text-align: center;
+    cursor: pointer;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
 }
 
 .cardTitle {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     color: var(--primary-color);
+}
+
+.cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .cardIcon {

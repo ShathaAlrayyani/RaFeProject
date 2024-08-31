@@ -161,3 +161,89 @@ export const ourJorClients: OurClientBrand[] = [
     brandName: "Stix",
   },
 ];
+
+export const tvCommercialsData = [
+  {
+    description: "",
+    id: "marouf_commercials",
+    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/MaroufRamadan.png",
+    title: "Marouf Commercials",
+  },
+  {
+    description: "",
+    id: "nafeeseh_commercials",
+    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/Nafesa.jpg",
+    title: "Nafesseh Commercials",
+  },
+  {
+    description: "",
+    id: "mandi_commercials",
+    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/MandiRice.png",
+    title: "Mandi Rice Commercials",
+  }
+];
+
+export const documentariesData = [
+  {
+    description: "",
+    id: "irth",
+    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Documentaries/Irth.png",
+    title: "Irth Documentary",
+  }
+];
+
+export const productionsData = [
+  {
+    description: "",
+    id: "ra_sketches",
+    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/Rub_Banadora.jpg",
+    title: "Ra Sketches",
+  },
+  {
+    description: "",
+    id: "bring_it_on",
+    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/BringWhatYouHave.jpg",
+    title: "Bring It On",
+  },
+  {
+    description: "",
+    id: "vice_versa",
+    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/Al3ks_Sa7e7.jpg",
+    title: "Vice Versa",
+  },
+  {
+    description: "",
+    id: "the_fear_book",
+    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/BookOfFear.png",
+    title: "The Fear Book",
+  },
+  {
+    description: "",
+    id: "celebrity_quiz",
+    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/CQ.jpg",
+    title: "Celebrity Quiz",
+  },
+];
+
+export const tabsContent = [
+  {
+    data: productionsData,
+    id:"productions",
+    tabName: "Productions",
+  },
+  {
+    data: tvCommercialsData,
+    id:"tv_Commercials",
+    tabName: "TV Commercials",
+  },
+  {
+    data: documentariesData,
+    id:"documentaries",
+    tabName: "Documentaries",
+  },
+  {
+    data: [],
+    id:"library",
+    tabName: "Library",
+  },
+];

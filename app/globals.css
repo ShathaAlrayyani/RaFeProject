@@ -9,6 +9,7 @@
   --light-gray-color: rgb(245 245 245);
   --mercury-color: rgb(232 232 232); 
   --modal-z-index:30;
+  --primary-color-opacity30: rgb(10 36 35 / 30%);
   --primary-color-opacity70: rgb(10 36 35 / 70%);
   --primary-color: rgb(20 33 42);
   --secondary-color-dark1: rgb(198 57 6);
@@ -17,7 +18,8 @@
   --secondary-color-light2: rgb(255 172 135);
   --secondary-color-opacity20: rgb(247 72 7 / 50%);
   --secondary-color: rgb(247 72 7);
-  --white-color-opacity30: rgb(255 255 255 / 70%);
+  --white-color-opacity30: rgb(255 255 255 / 30%);
+  --white-color-opacity70: rgb(255 255 255 / 70%);
   --white-color: rgb(255 255 255); 
 }
 

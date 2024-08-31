@@ -2,9 +2,11 @@
     display: flex;
     gap: 32px;
     width: 100%;
+    /* background-color: var(--primary-color); */
     /* justify-content: center; */
     align-items: center;
     flex-wrap: wrap;
+    /* padding: 32px; */
 }
 
 @media (max-width: 768px) {

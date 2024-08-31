@@ -1,10 +1,10 @@
 import styles from "./Card.module.css";
 import Image from "next/image";
-import NoImgPlaceholder from '../../assets/noImg2.svg'
+import NoImgPlaceholder from "../../assets/noImg2.svg";
 
 interface IAppCardProps {
   description: string;
-  id:any
+  id: any;
   imgSrc: string;
   onClick?: () => void;
   title: string;
@@ -18,7 +18,7 @@ export const AppCard = ({
   title,
 }: IAppCardProps) => {
   return (
-    <div className={styles.appCard}>
+    <div className={styles.appCard} onClick={onClick}>
       {imgSrc ? (
         <Image
           alt="about us"
@@ -27,12 +27,13 @@ export const AppCard = ({
           src={imgSrc}
           width={1200}
         />
-
       ) : (
-        <NoImgPlaceholder className={styles.cardIcon}/>
+        <NoImgPlaceholder className={styles.cardIcon} />
       )}
-      <h1 className={styles.cardTitle}>{title}</h1>
-      <p className={styles.cardDesc}>{description}</p>
+      <div className={styles.cardContent}>
+        <h1 className={styles.cardTitle}>{title}</h1>
+        {/* <p className={styles.cardDesc}>{description}</p> */}
+      </div>
     </div>
   );
 };
