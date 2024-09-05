@@ -29,7 +29,6 @@ interface IOurProductPageProps {
 export const OurProductPage = ({ sectionName }: IOurProductPageProps) => {
   const [data, setData] = useState<ShowDetailsProps | undefined>();
   const pathname = usePathname();
-  console.log("sectionName: " + sectionName);
 
   const getShowDetails = async () => {
     const showId = extractId(pathname);

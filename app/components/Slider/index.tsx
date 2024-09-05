@@ -1,32 +1,39 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade, Navigation, Pagination, Scrollbar, Mousewheel } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/effect-fade";
-import "swiper/css/pagination";
+import {Navigation, Pagination, Keyboard, Mousewheel } from "swiper/modules";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import styles from './Slider.module.css'
 
 interface IAppSliderProps {
+  cardsNumber: number
   children: any
 }
 
-export const AppSlider = ({children}: IAppSliderProps) => {
+export const AppSlider = ({cardsNumber, children}: IAppSliderProps) => {
   return (
     <div className={styles.sliderContainer}>
       <Swiper
-        autoHeight={true}
-        direction={'vertical'}
-        effect={'fade'}
-        mousewheel={true}
-        slidesPerView={1}
+        breakpoints={{
+          768: {
+            slidesPerView: cardsNumber < 2.5 ? cardsNumber : 2.5,
+          },
+          425: {
+            slidesPerView: cardsNumber < 1.5 ? cardsNumber : 1.5,
+          }
+        }}
+        className={styles.mySwiperProject}
         spaceBetween={30}
+        keyboard={{
+          enabled: true,
+        }}
         pagination={{
           clickable: true,
-          dynamicBullets: true,
         }}
-        loop={false}
-        modules={[EffectFade, Mousewheel, Pagination]}
-        className={styles.mySwiperProject}
+        mousewheel={true}
+        modules={[ Pagination, Navigation, Keyboard, Mousewheel]}
+        // navigation={true}
       >
         {children}
       </Swiper>
