@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { OurClientBrand } from "@/app/constants/mainPage";
 import styles from "./OurClientComponent.module.css";
+import { OurClientBrand } from "@/app/constants/ourClients";
 
 
 

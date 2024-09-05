@@ -18,6 +18,11 @@
     width: 100px;
 }
 
+.smallSpinner {
+    height: 50px;
+    width: 50px;
+}
+
 .innerCircle {
     position: absolute;
     border-color: var(--white-color);

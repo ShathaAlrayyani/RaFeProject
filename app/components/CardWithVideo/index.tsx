@@ -17,6 +17,8 @@ export const CardWithVideo = ({
         <iframe
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
+          height={1200}
+          width={1200}
           className={styles.iframeVideo}
           referrerPolicy="strict-origin-when-cross-origin"
           src={videoLink}

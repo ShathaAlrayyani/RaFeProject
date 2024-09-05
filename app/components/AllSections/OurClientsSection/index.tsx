@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 import styles from "./OurClientsSection.module.css";
 import { OurClientComponent } from "./OurClientComponent";
-import { ourJorClients, ourUaeClients } from "@/app/constants/mainPage";
 import TopShapeIcon from "../../../assets/orangeCowIcon1.svg";
 import BottomShapeIcon from "../../../assets/orangeCowIcon2.svg";
+import { ourJorClients, ourUaeClients } from "@/app/constants/ourClients";
 
 const imgSrc =
   "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Photos/_MG_7306.jpg";

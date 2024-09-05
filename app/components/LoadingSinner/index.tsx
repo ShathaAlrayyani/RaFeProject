@@ -2,15 +2,17 @@ import styles from "./LoadingSinner.module.css";
 import classNames from "classnames";
 
 interface ILoadingSinnerProps {
-  isWhite?: boolean;
+  isWhite?: boolean
+  isSmall?:boolean
 }
 
-export const LoadingSinner = ({ isWhite = false }: ILoadingSinnerProps) => {
+export const LoadingSinner = ({ isWhite = false, isSmall=false }: ILoadingSinnerProps) => {
   return (
     <div className={styles.spinnerWrapper}>
       <div
         className={classNames(styles.spinner, {
           [styles.whiteSpinner]: isWhite,
+          [styles.smallSpinner]: isSmall,
         })}
       >
         <div
