@@ -51,7 +51,7 @@ const handleSlideChange = (swiper:any) => {
         modules={[Navigation, Keyboard]}
         navigation={false}
         onSlideChange={(swiper) => handleSlideChange(swiper)}
-        onSwiper={(swiper) => console.log(swiper.isBeginning)}
+        // onSwiper={(swiper) => console.log(swiper.isBeginning)}
       >
         {children}
       </Swiper>

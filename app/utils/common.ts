@@ -5,7 +5,6 @@ export const extractId = (path: string): string => {
 
 export const extractSectionName = (path: string): string => {
   const parts = path.split("/");
-  console.log("parts: " + parts);
   return parts[parts.length - 2];
 };
 

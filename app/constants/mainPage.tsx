@@ -110,13 +110,13 @@ export const productionsData = [
     description: "",
     id: "bring_it_on",
     imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/BringWhatYouHave.jpg",
-    title: "Bring It On",
+    title: "Hat Eli Andak",
   },
   {
     description: "",
     id: "vice_versa",
     imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/Al3ks_Sa7e7.jpg",
-    title: "Vice Versa",
+    title: "Al-Aks Sahih",
   },
   {
     description: "",

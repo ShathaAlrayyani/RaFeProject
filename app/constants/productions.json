@@ -10,10 +10,10 @@
             ]
         },
         {
-            "description": "",
+            "description": "Is a lively and interactive street show that brings the excitement right to the people! We hit the streets, catching random passersby and challenging them to speak on a surprise topic—for a full minute without hesitation. It's fast, it's fun, and the stakes are high! Nail the challenge, and you walk away with a special prize. Each episode is packed with spontaneity, quick thinking, and fresh surprises, making every moment an unpredictable adventure!",
             "id": "bring_it_on",
             "imgSrc": "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/BringWhatYouHave.jpg",
-            "showName": "Bring It On",
+            "showName": "Hat Eli Andak",
             "videos": [
                 "https://www.youtube-nocookie.com/embed/La9PjpSNaDQ?si=M83gUcRLfTDRzCoG",
                 "https://www.youtube-nocookie.com/embed/vVoYgQ_640c?si=pykFNzIAT3jDMDYF",
@@ -26,10 +26,10 @@
             ]
         },
         {
-            "description": "",
+            "description": "This show dives into the heart of social phenomena by flipping the script and reversing roles between different groups. The goal? To uncover how drastically situations shift when roles are swapped, and to reveal how the other side truly feels in those scenarios. With a fresh, innovative approach, the show tackles everyday challenges and human experiences, encouraging viewers to rethink and reflect on important social issues from a whole new angle. It’s a thought-provoking exploration of empathy and perspective, delivered in a dynamic and engaging way!",
             "id": "vice_versa",
             "imgSrc": "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/Al3ks_Sa7e7.jpg",
-            "showName": "Vice Versa",
+            "showName": "Al-Aks Sahih",
             "videos": [
                 "https://www.youtube-nocookie.com/embed/wwc45GrobKE?si=7a0C4aM1ulD52Ov0",
                 "https://www.youtube-nocookie.com/embed/uHR8ZfI4AsI?si=oGGZ1AHWXMlSLEGb",
@@ -42,7 +42,7 @@
             ]
         },
         {
-            "description": "",
+            "description": "This show takes a bold approach to exploring social phenomena by flipping roles between different groups, revealing how perspectives shift and emotions change when the tables are turned. Through this eye-opening experiment, we highlight everyday struggles and human experiences in a fresh, innovative way. Each episode encourages viewers to rethink familiar situations and reflect on key social issues from a completely new vantage point. It’s an engaging, thought-provoking journey that challenges assumptions and sparks deeper understanding.",
             "id": "the_fear_book",
             "imgSrc": "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/BookOfFear.png",
             "showName": "The Fear Book",
@@ -58,7 +58,7 @@
             ]
         },
         {
-            "description": "",
+            "description": "Get ready to see celebrities like never before! In CELEBRITY QUIZ, we put them to the test with our one-of-a-kind questions, uncovering surprising facts and sides you don’t usually see. It’s a chance to discover fun, unexpected insights that will totally change how you view your favorite stars. Tune in and dive into the fresh, exciting world of CELEBRITY QUIZ—where the spotlight shines in a whole new way!",
             "id": "celebrity_quiz",
             "imgSrc": "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/CQ.jpg",
             "showName": "Celebrity Quiz",

@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { CardWithVideo } from "../../CardWithVideo";
 import { LoadingSinner } from "../../LoadingSinner";
 import { NoDataPlaceholder } from "../../NoDataPlaceholder";
@@ -7,7 +7,6 @@ import styles from "./OurProductPage.module.css";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { extractId, filterDataById, getURL } from "@/app/utils/common";
-import classNames from "classnames";
 
 export interface ShowDetailsProps {
   description: string;
