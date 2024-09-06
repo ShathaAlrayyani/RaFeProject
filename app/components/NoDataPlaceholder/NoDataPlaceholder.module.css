@@ -55,3 +55,11 @@
 .whiteText {
     color: var(--white-color);
 }
+
+.mobileView h1 {
+    font-size: 24px;
+}
+
+.mobileView p {
+    font-size: 14px;
+}

@@ -38,7 +38,7 @@ export const CardsSlider = () => {
                 ))}
               </AppSlider>
             ) : (
-              <NoDataPlaceholder isWhite/>
+              <NoDataPlaceholder isMobile isWhite/>
             )}
           </div>
         </div>
