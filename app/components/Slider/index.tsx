@@ -1,11 +1,12 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Keyboard, Mousewheel } from "swiper/modules";
+import { Navigation, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { useEffect, useRef, useState } from "react"; // Import useRef for Swiper control
+import { useRef, useState } from "react"; // Import useRef for Swiper control
 import styles from "./Slider.module.css";
+import { sliderBreakPoints } from "@/app/constants/mainPage";
 
 interface IAppSliderProps {
   cardsNumber: number;
@@ -40,14 +41,7 @@ const handleSlideChange = (swiper:any) => {
     <div className={styles.sliderContainer}>
       <Swiper
         ref={swiperRef}
-        breakpoints={{
-          768: {
-            slidesPerView: cardsNumber < 2.5 ? cardsNumber : 2.5,
-          },
-          425: {
-            slidesPerView: cardsNumber < 1.5 ? cardsNumber : 1.5,
-          },
-        }}
+        breakpoints={sliderBreakPoints(cardsNumber)}
         className={styles.mySwiperProject}
         spaceBetween={30}
         keyboard={{

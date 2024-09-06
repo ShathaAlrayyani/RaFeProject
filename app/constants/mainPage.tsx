@@ -50,6 +50,24 @@ export const keyServices: KeyService[] = [
   },
 ];
 
+export const sliderBreakPoints = (cardsNumber: number) => ({
+  350: {
+    slidesPerView: cardsNumber < 1.25 ? cardsNumber : 1.25,
+  },
+  400: {
+    slidesPerView: cardsNumber < 1.50 ? cardsNumber : 1.50,
+  },
+  540: {
+    slidesPerView: cardsNumber < 2 ? cardsNumber : 2,
+  },
+  640: {
+    slidesPerView: cardsNumber < 2.25 ? cardsNumber : 2.25,
+  },
+  680: {
+    slidesPerView: cardsNumber < 2.5 ? cardsNumber : 2.5,
+  },
+})
+
 
 export const tvCommercialsData = [
   {

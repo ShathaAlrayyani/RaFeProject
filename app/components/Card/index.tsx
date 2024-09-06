@@ -1,6 +1,7 @@
 import styles from "./Card.module.css";
 import Image from "next/image";
 import NoImgPlaceholder from "../../assets/noImg2.svg";
+import { LoadingSinner } from "../LoadingSinner";
 
 interface IAppCardProps {
   description: string;
@@ -19,21 +20,27 @@ export const AppCard = ({
 }: IAppCardProps) => {
   return (
     <div className={styles.appCard} onClick={onClick}>
-      {imgSrc ? (
-        <Image
-          alt="about us"
-          className={styles.cardImage}
-          height={1200}
-          src={imgSrc}
-          width={1200}
-        />
+      {!!!imgSrc || !!!title ? (
+        <LoadingSinner />
       ) : (
-        <NoImgPlaceholder className={styles.cardIcon} />
+        <>
+          {imgSrc ? (
+            <Image
+              alt="about us"
+              className={styles.cardImage}
+              height={1200}
+              src={imgSrc}
+              width={1200}
+            />
+          ) : (
+            <NoImgPlaceholder className={styles.cardIcon} />
+          )}
+          <div className={styles.cardContent}>
+            <h1 className={styles.cardTitle}>{title}</h1>
+            {/* <p className={styles.cardDesc}>{description}</p> */}
+          </div>
+        </>
       )}
-      <div className={styles.cardContent}>
-        <h1 className={styles.cardTitle}>{title}</h1>
-        {/* <p className={styles.cardDesc}>{description}</p> */}
-      </div>
     </div>
   );
 };

@@ -12,6 +12,10 @@
   --primary-color-opacity30: rgb(10 36 35 / 30%);
   --primary-color-opacity70: rgb(10 36 35 / 70%);
   --primary-color: rgb(20 33 42);
+  --primary-color-lighter1: rgb(40 53 62);
+  --primary-color-lighter2: rgb(60 73 82);
+  --primary-color-lighter1-opacity30: rgb(40 53 62 / 30%);
+  --primary-color-lighter2-opacity30: rgb(60 73 82 / 30%);
   --secondary-color-dark1: rgb(198 57 6);
   --secondary-color-dark2: rgb(148 43 5); 
   --secondary-color-light1: rgb(255 127 62);

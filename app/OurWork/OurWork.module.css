@@ -1,6 +1,7 @@
 .desktopView {
     display: block;
     width: 100%;
+    margin-bottom: 32px;
 }
 
 .mobileView {
@@ -15,6 +16,7 @@
     .mobileView {
         display: block;
         padding-top: 64px;
+        margin-bottom: 32px;
         width: 100%;
     }
 

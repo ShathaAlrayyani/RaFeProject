@@ -7,6 +7,8 @@ import { AppCard } from "../../Card";
 import { useRouter } from "next/navigation";
 import { NoDataPlaceholder } from "../../NoDataPlaceholder";
 import BgIcon from "../../../assets/VectorBg.svg";
+import TopShapeIcon from "../../../assets/orangeCowIcon1.svg";
+import BottomShapeIcon from "../../../assets/orangeCowIcon2.svg";
 
 export const CardsSlider = () => {
     const router = useRouter();
@@ -15,6 +17,7 @@ export const CardsSlider = () => {
     };
   return (
     <div className={styles.cardsSliderWrapper}>
+            <TopShapeIcon className={styles.topIcon}/>
         <BgIcon className={styles.bgIcon}/>
       {tabsContent.map((section, index) => (
         <div className={styles.sectionWrapper} key={index}>
@@ -43,6 +46,7 @@ export const CardsSlider = () => {
           </div>
         </div>
       ))}
+      <BottomShapeIcon className={styles.bottomIcon} />
     </div>
   );
 };

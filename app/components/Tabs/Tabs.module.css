@@ -6,7 +6,7 @@
     padding: 32px;
     position: relative;
     width: 100%;
-    min-height: 100%;
+    min-height: 80vh;
 }
 
 .activeTab {
@@ -16,6 +16,7 @@
 
 .activeTab button {
     font-weight: 600;
+    color: var(--secondary-color);
 }
 
 .buttonContainer button {
