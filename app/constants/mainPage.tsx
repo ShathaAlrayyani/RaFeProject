@@ -73,7 +73,7 @@ export const tvCommercialsData = [
   {
     description: "",
     id: "marouf_commercials",
-    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/MaroufRamadan.png",
+    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/Marouf.jpg",
     title: "Marouf Commercials",
   },
   {
