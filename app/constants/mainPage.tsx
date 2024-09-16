@@ -5,6 +5,9 @@ import PicIcon from "../assets/tvWithPeople.svg";
 import PicturesIcon from "../assets/picturesIcon.svg";
 import ServiceIcon from "../assets/servicesIcon.svg";
 
+import InstagramImg from '../assets/InstagramSvg.svg'
+import YoutubeImg from '../assets/coolYoutubeSvg.svg'
+
 export interface KeyService {
   content: string;
   icon: any;
@@ -154,3 +157,14 @@ export const tabsContent = [
     tabName: "Library",
   },
 ];
+
+export const socialMediaData = [
+  {
+    icon: <InstagramImg/>,
+    link:'https://www.instagram.com/ra.creativesjo/?igshid=YmMyMTA2M2Y%3D',
+  },
+  {
+    icon: <YoutubeImg/>,
+    link:'https://www.youtube.com/@racreativesjo',
+  }
+]

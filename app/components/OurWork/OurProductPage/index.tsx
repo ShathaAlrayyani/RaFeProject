@@ -32,10 +32,13 @@ export const OurProductPage = ({ sectionName }: IOurProductPageProps) => {
   const getShowDetails = async () => {
     const showId = extractId(pathname);
     const url = getURL(sectionName);
-    const res = await fetch(url);
-    const data = await res.json();
-    const filteredItem = filterDataById(data.data, "id", showId);
-    return filteredItem;
+    if(url) {
+      const res = await fetch(url);
+      const data = await res.json();
+      const filteredItem = filterDataById(data.data, "id", showId);
+      return filteredItem;
+    }
+    return {}
   };
 
   useEffect(() => {

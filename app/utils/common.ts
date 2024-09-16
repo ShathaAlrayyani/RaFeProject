@@ -20,11 +20,11 @@ export const filterDataById = (
 export const getURL = (sectionName: string): string => {
   switch (sectionName) {
     case 'productions':
-      return "https://ra-fe-project.vercel.app/api/productions"
+      return "https://racreativesjo.com/api/productions"
     case 'tv_Commercials':
-      return "https://ra-fe-project.vercel.app/api/tvCommercials"
+      return "https://racreativesjo.com/api/tvCommercials"
     case 'documentaries':
-      return "https://ra-fe-project.vercel.app/api/documentaries"
+      return "https://racreativesjo.com/api/documentaries"
     default:
       return "";
   }
