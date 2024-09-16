@@ -87,6 +87,7 @@
     gap: 32px;
     height: fit-content;
     justify-content: center;
+    margin-bottom: 64px;
     text-align: center;
     z-index: 2;
 }
