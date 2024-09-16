@@ -26,14 +26,15 @@
 .clientMsg {
     align-items: center;
     border-radius: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: var(--primary-color-opacity70);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background-color: var(--primary-color-opacity30);
     display: flex;
     flex-wrap: wrap;
     height: fit-content;
     justify-content: center;
     padding: 24px;
     width: fit-content;
+    z-index: 2;
 }
 
 .footerContent {
