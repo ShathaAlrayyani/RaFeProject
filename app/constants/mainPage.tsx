@@ -71,7 +71,6 @@ export const sliderBreakPoints = (cardsNumber: number) => ({
   },
 })
 
-
 export const tvCommercialsData = [
   {
     description: "",
@@ -90,6 +89,12 @@ export const tvCommercialsData = [
     id: "mandi_commercials",
     imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/MandiRice.png",
     title: "Mandi Rice Commercials",
+  },
+  {
+    description: "",
+    id: "eisberg_commercials",
+    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/JordanianBrands/Eisberg.png",
+    title: "Eisberg Commercials",
   }
 ];
 
