@@ -95,7 +95,7 @@ export const tvCommercialsData = [
   {
     description: "",
     id: "eisberg_commercials",
-    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/JordanianBrands/Eisberg.png",
+    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/Eisberg2.png%20.jpg",
     title: "Eisberg Commercials",
   }
 ];
