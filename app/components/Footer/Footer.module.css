@@ -86,8 +86,8 @@
     font-weight: 500;
     gap: 32px;
     height: fit-content;
-    margin-bottom: 120px;
     justify-content: center;
+    margin-bottom: 150px;
     text-align: center;
     z-index: 2;
 }
