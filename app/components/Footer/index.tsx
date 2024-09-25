@@ -74,7 +74,7 @@ export const Footer = () => {
 
         <div className={styles.iconWithContent}>
           <PhoneIcon />
-          <h1>+962 791118242</h1>
+          <h1>+962 791 118 244</h1>
         </div>
       </div>
 

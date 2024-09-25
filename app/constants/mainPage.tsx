@@ -7,6 +7,8 @@ import ServiceIcon from "../assets/servicesIcon.svg";
 
 import InstagramImg from '../assets/InstagramSvg.svg'
 import YoutubeImg from '../assets/coolYoutubeSvg.svg'
+import TikTokImg from '../assets/tiktok_social.svg'
+import FaceBookImg from '../assets/facebook_icon.svg'
 
 export interface KeyService {
   content: string;
@@ -171,5 +173,13 @@ export const socialMediaData = [
   {
     icon: <YoutubeImg/>,
     link:'https://www.youtube.com/@racreativesjo',
-  }
+  },
+  {
+    icon: <FaceBookImg/>,
+    link:'https://www.facebook.com/ra.creativesjo/',
+  },
+  {
+    icon: <TikTokImg/>,
+    link:'https://www.tiktok.com/@ra.creativesjo?_t=8pnWyafSXtF&_r=1',
+  },
 ]
