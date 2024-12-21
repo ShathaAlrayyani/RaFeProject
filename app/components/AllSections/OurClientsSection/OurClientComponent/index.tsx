@@ -1,9 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import styles from "./OurClientComponent.module.css";
 import { OurClientBrand } from "@/app/constants/ourClients";
-import { LoadingSinner } from "@/app/components/LoadingSinner";
-import classNames from "classnames";
 
 interface IOurClientsSectionProps {
   brandsImgs: OurClientBrand[];
@@ -14,7 +12,6 @@ export const OurClientComponent = ({
   brandsImgs,
   title,
 }: IOurClientsSectionProps) => {
-  const [isLoading, setIsLoading] = useState(true);
   const sectionRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -43,11 +40,6 @@ export const OurClientComponent = ({
       }
     };
   }, []); // Empty dependency array to run only once
-
-  const handleOnLoadingComplete = () => {
-    console.log(isLoading);
-    setIsLoading(false);
-  };
   return (
     <div
       ref={sectionRef}
@@ -62,13 +54,11 @@ export const OurClientComponent = ({
             {/* {isLoading && <LoadingSinner isSmall />} */}
             <Image
               alt="about us"
-              className={classNames(styles.brandImg, {
-                [styles.hiddenImg]: isLoading,
-              })}
-              height={500} // Adjust as needed
+              className={styles.brandImg}
+              height={400} // Adjust as needed
               quality={50} // Optional: reduces size further
               src={brand.brandImgSrc}
-              width={500} // Reduced dimensions
+              width={400} // Reduced dimensions
             />
           </div>
         ))}
