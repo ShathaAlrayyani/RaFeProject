@@ -97,12 +97,10 @@
     }
 
     .enText {
-        background-color: var(--primary-color-opacity30);
-        backdrop-filter: blur(3px);
-        border-radius: 5px;
         color: var(--white-color-opacity70);
         padding-top: 24px;
         padding: 16px;
+        font-size: 24px;
     }
 
     .textTitle {
@@ -110,6 +108,22 @@
     }
 }
 
+.topIcon,
+.bottomIcon {
+    position: absolute;
+    opacity: 50%;
+    fill: var(--primary-color);
+}
+
+.topIcon {
+    top: 0;
+    right: 0;
+}
+
+.bottomIcon {
+    bottom: 0;
+    left: 0;
+}
 
 @media (max-width: 768px) {
     .aboutUsWrapper {
@@ -129,5 +143,6 @@
 
     .enText {
         padding-top: 0;
+        font-size: 20px;
     }
 }

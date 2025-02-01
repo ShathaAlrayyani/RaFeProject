@@ -55,6 +55,7 @@ export const MissionVisionSection = () => {
           technology and creativity in one place.
         </div>
       </div>
+      <h1 className={styles.mobileTitle}>And</h1>
       <div className={styles.sectionWrapper}>
         <div className={styles.card}>
           We took it upon ourselves as a team to work on improving the

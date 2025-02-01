@@ -22,6 +22,7 @@
 .topIcon, .bottomIcon {
     position: absolute;
     opacity: 40%;
+    fill: var(--secondary-color);
 }
 
 .topIcon {

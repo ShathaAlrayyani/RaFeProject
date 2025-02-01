@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { VideoBg } from "../../VideoBg";
 import { AppModal } from "../../Modal";
 import { Button, ButtonVarients } from "../../Button";
+import TopShapeIcon from "../../../assets/orangeCowIcon1.svg";
+import BottomShapeIcon from "../../../assets/orangeCowIcon2.svg";
 
 const imgSrc =
   "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Photos/_MG_7306.jpg";
@@ -65,6 +67,8 @@ export const IntroductionSection = () => {
           width={1200}
         />
         <div className={styles.blueBg} />
+        <TopShapeIcon className={styles.topIcon}/>
+        <BottomShapeIcon className={styles.bottomIcon} />
         <div className={styles.content}>
           <div className={styles.title}>
             <h1 className={styles.aboutUsTitle}>
