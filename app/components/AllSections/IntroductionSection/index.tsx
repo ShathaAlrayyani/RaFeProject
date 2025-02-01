@@ -57,7 +57,6 @@ export const IntroductionSection = () => {
         ref={sectionRef}
         className={`${styles.aboutUsWrapper} ${styles.hidden}`}
       >
-        <div className={styles.blueBg} />
         <Image
           alt="about us"
           className={styles.bgImage}
@@ -65,6 +64,7 @@ export const IntroductionSection = () => {
           src={imgSrc}
           width={1200}
         />
+        <div className={styles.blueBg} />
         <div className={styles.content}>
           <div className={styles.title}>
             <h1 className={styles.aboutUsTitle}>
