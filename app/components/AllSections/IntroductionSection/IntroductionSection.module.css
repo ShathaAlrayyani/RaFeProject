@@ -73,14 +73,14 @@
     }
 
     .aboutUsTitle {
-        color: var(--white-color-opacity70);
+        color: var(--primary-color-opacity30);
         font-size: 32px;
         font-weight: 700;
         text-wrap: nowrap;
     }
 
     .orangeTitle {
-        color: var(--secondary-color);
+        color: var(--secondary-color-light1);
     }
 
     .contentWrapper {

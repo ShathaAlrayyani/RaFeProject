@@ -22,7 +22,7 @@ export const headerButtons = [
 ];
 
 export const Header = ({ acivePage }: IHeaderProps) => {
-  const [aciveTab, setActiveTab] = useState<string| undefined>(acivePage);
+  const [aciveTab, setActiveTab] = useState<string | undefined>(acivePage);
 
   const handleActiveTab = (title: any) => {
     setActiveTab(title);
@@ -41,7 +41,7 @@ export const Header = ({ acivePage }: IHeaderProps) => {
       <div className={styles.headerSections}>
         {headerButtons.map((section, index) => (
           <Button
-            btnStyle={ButtonVarients.TAB_BUTTON}
+            btnStyle={ButtonVarients.HEADER_BUTTON}
             isActiveTab={aciveTab == section.title ? true : false}
             key={index}
             onClick={() => handleActiveTab(section.title)}

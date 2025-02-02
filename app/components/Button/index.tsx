@@ -5,20 +5,30 @@ import { MouseEvent } from "react";
 export enum ButtonVarients {
   PRIMARY = "primary",
   SECONDARY = "secondary",
-  TAB_BUTTON = "tabButton"
+  TAB_BUTTON = "tabButton",
+  HEADER_BUTTON="headerButton"
 }
 
 interface IButtonProps {
   btnStyle: ButtonVarients;
   children: any;
-  isActiveTab?:boolean
-  onClick: (e:MouseEvent<HTMLButtonElement>) => void;
+  isActiveTab?: boolean;
+  onClick: (e: MouseEvent<HTMLButtonElement>) => void;
 }
 
-export const Button = ({ btnStyle, children, isActiveTab=false, onClick }: IButtonProps) => {
-  
+export const Button = ({
+  btnStyle,
+  children,
+  isActiveTab = false,
+  onClick,
+}: IButtonProps) => {
   return (
-    <button className={classNames(style[btnStyle], { [style.activeTab] : isActiveTab })} onClick={onClick}>
+    <button
+      className={classNames(style[btnStyle], {
+        [style.activeTab]: isActiveTab,
+      })}
+      onClick={onClick}
+    >
       {children}
     </button>
   );

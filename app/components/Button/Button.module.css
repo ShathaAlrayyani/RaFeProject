@@ -24,7 +24,17 @@
 .tabButton {
     background-color: transparent;
     border: none;
-    color: var(--primary-color-lighter2);
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 16px;
+    text-wrap: nowrap;
+}
+
+.headerButton {
+    background-color: transparent;
+    border: none;
+    color: var(--white-color-opacity70);
     font-size: 16px;
     font-weight: 600;
     padding: 10px 16px;
@@ -35,7 +45,8 @@
     color: var(--secondary-color);
 }
 
-.tabButton:hover {
+.tabButton:hover,
+.headerButton:hover {
     color: var(--secondary-color);
 }
 

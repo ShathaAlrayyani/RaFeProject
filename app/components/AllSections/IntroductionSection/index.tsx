@@ -73,10 +73,10 @@ export const IntroductionSection = () => {
           <div className={styles.title}>
             <h1 className={styles.aboutUsTitle}>
               Where
-              <span className={styles.orangeTitle}> creative</span>
+              <span className={styles.orangeTitle}> Creative</span>
             </h1>
             <h1 className={styles.aboutUsTitle}>
-              <span className={styles.orangeTitle}> process</span> happen!
+              <span className={styles.orangeTitle}> Process</span> Happen!
             </h1>
           </div>
           <div className={styles.contentWrapper}>

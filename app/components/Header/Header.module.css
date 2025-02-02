@@ -1,14 +1,16 @@
 .headerComponent {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  height: 60px;
-  background-color: var(--white-color);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-color: var(--primary-color-opacity45);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   display: flex;
+  height: 60px;
   justify-content: space-between;
-  padding: 10px 24px;
   overflow: hidden ;
+  padding: 10px 24px;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: var(--header-z-index);
 }
 

@@ -36,15 +36,12 @@ const sectionsElements = [
 ];
 
 export default function Home() {
-
   return (
-    <main>
+    <main className="appWrapper">
       <Header acivePage="Home" />
-      <main className="appWrapper">
-        {sectionsElements.map((section, index) => (
-          <Fragment key={index + 123}>{section.Component}</Fragment>
-        ))}
-      </main>
+      {sectionsElements.map((section, index) => (
+        <Fragment key={index + 123}>{section.Component}</Fragment>
+      ))}
     </main>
   );
 }
