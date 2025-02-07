@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 import { Button, ButtonVarients } from "../Button";
 import Link from "next/link";
 import Image from "next/image";
-import ImgSrc from "../../assets/logoExtra/bgImg.png";
+// import ImgSrc from "../../assets/logoExtra/bgImg.png";
 
 interface IHeaderProps {
   acivePage?: string;
