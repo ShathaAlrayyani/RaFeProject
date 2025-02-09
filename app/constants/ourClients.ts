@@ -116,22 +116,6 @@ export const ourUaeClients: OurClientBrand[] = [
 
 export const ourJorClients: OurClientBrand[] = [
   {
-    brandImgSrc: AbuHatemImg,
-    brandName: "Abu Hatem",
-  },
-  {
-    brandImgSrc: AbuOdehImg,
-    brandName: "Abu Odeh",
-  },
-  {
-    brandImgSrc: AlryadiImg,
-    brandName: "Al Ryadi",
-  },
-  {
-    brandImgSrc: BaazImg,
-    brandName: "Baaz",
-  },
-  {
     brandImgSrc: CrownPrinceFoundationImg,
     brandName: "Crown Prince Foundation",
   },
@@ -150,10 +134,6 @@ export const ourJorClients: OurClientBrand[] = [
   {
     brandImgSrc: Eisberg,
     brandName: "Eisberg",
-  },
-  {
-    brandImgSrc: ElbashahImg,
-    brandName: "Elbashah",
   },
   {
     brandImgSrc: GrandAmmanImg,
@@ -218,5 +198,25 @@ export const ourJorClients: OurClientBrand[] = [
   {
     brandImgSrc: UnknownBrandImg,
     brandName: "Unknown",
-  }
+  },
+  {
+    brandImgSrc: ElbashahImg,
+    brandName: "Elbashah",
+  },
+  {
+    brandImgSrc: AbuHatemImg,
+    brandName: "Abu Hatem",
+  },
+  {
+    brandImgSrc: AbuOdehImg,
+    brandName: "Abu Odeh",
+  },
+  {
+    brandImgSrc: AlryadiImg,
+    brandName: "Al Ryadi",
+  },
+  {
+    brandImgSrc: BaazImg,
+    brandName: "Baaz",
+  },
 ];

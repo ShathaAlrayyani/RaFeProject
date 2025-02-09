@@ -32,13 +32,13 @@ export const OurProductPage = ({ sectionName }: IOurProductPageProps) => {
   const getShowDetails = async () => {
     const showId = extractId(pathname);
     const url = getURL(sectionName);
-    if(url) {
+    if (url) {
       const res = await fetch(url);
       const data = await res.json();
       const filteredItem = filterDataById(data.data, "id", showId);
       return filteredItem;
     }
-    return {}
+    return {};
   };
 
   useEffect(() => {
@@ -73,17 +73,11 @@ export const OurProductPage = ({ sectionName }: IOurProductPageProps) => {
               width={1200}
             />
             <div className={styles.content}>
-              <p>
-                {data.description}
-              </p>
+              <p>{data.description}</p>
             </div>
           </div>
-          <div 
-          className={styles.bottomPart}
-          >
-            <div className={styles.sectionTitle}>
-              {data.showName}
-            </div>
+          <div className={styles.bottomPart}>
+            <div className={styles.sectionTitle}>{data.showName}</div>
             <div className={styles.videoCardWrapper}>
               {!data?.videos ? (
                 <LoadingSinner />
