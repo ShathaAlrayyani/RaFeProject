@@ -3,7 +3,7 @@ import styles from "./IntroductionSection.module.css";
 import { useEffect, useRef, useState } from "react";
 import { VideoBg } from "../../VideoBg";
 import { AppModal } from "../../Modal";
-import { Button, ButtonVarients } from "../../Button";
+import { Button, ButtonVariants } from "../../Button";
 import TopShapeIcon from "../../../assets/orangeCowIcon1.svg";
 import BottomShapeIcon from "../../../assets/orangeCowIcon2.svg";
 
@@ -88,7 +88,7 @@ export const IntroductionSection = () => {
             </p>
             <div className={styles.buttonWrapper}>
               <Button
-                btnStyle={ButtonVarients.PRIMARY}
+                btnStyle={ButtonVariants.PRIMARY}
                 onClick={handleOnCardClick}
               >
                 Show Reel

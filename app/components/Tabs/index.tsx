@@ -1,4 +1,4 @@
-import { Button, ButtonVarients } from "../Button";
+import { Button, ButtonVariants } from "../Button";
 import classNames from "classnames";
 import styles from "./Tabs.module.css";
 import { useState } from "react";
@@ -26,7 +26,7 @@ export const Tabs = () => {
             key={index}
           >
             <Button
-              btnStyle={ButtonVarients.TAB_BUTTON}
+              btnStyle={ButtonVariants.TAB_BUTTON}
               isActiveTab={activeTab === tabData.tabName}
               onClick={() => handleTabClick(tabData.tabName)}
             >

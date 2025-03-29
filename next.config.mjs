@@ -7,7 +7,6 @@ const nextConfig = {
       use: ['@svgr/webpack'],
     });
 
-    // Important: return the modified config
     return config;
   },
   images: {

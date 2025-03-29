@@ -1,7 +1,7 @@
 import { useState } from "react";
 import RaLogoSvg from "../../assets/RaLogo2.svg";
 import styles from "./Header.module.css";
-import { Button, ButtonVarients } from "../Button";
+import { Button, ButtonVariants } from "../Button";
 import Link from "next/link";
 import Image from "next/image";
 // import ImgSrc from "../../assets/logoExtra/bgImg.png";
@@ -41,7 +41,7 @@ export const Header = ({ acivePage }: IHeaderProps) => {
       <div className={styles.headerSections}>
         {headerButtons.map((section, index) => (
           <Button
-            btnStyle={ButtonVarients.HEADER_BUTTON}
+            btnStyle={ButtonVariants.HEADER_BUTTON}
             isActiveTab={aciveTab == section.title ? true : false}
             key={index}
             onClick={() => handleActiveTab(section.title)}
