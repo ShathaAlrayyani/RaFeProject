@@ -13,7 +13,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'ra-project.nyc3.cdn.digitaloceanspaces.com',
+        hostname: process.env.DIGITAL_OCEAN_URL,
         port: '',
         pathname: '/**',
       },
