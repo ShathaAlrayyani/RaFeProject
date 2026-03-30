@@ -39,7 +39,7 @@ const sectionsElements = [
 export default function Home() {
   return (
     <main className="appWrapper">
-      <Header acivePage="Home" />
+      <Header activePage="Home" />
       {sectionsElements.map((section, index) => (
         <Fragment key={index + 123}>{section.Component}</Fragment>
       ))}
