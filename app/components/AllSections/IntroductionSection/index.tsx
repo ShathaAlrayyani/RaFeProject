@@ -7,8 +7,7 @@ import { Button, ButtonVariants } from "../../Button";
 import TopShapeIcon from "../../../assets/orangeCowIcon1.svg";
 import BottomShapeIcon from "../../../assets/orangeCowIcon2.svg";
 
-const imgSrc =
-  "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Photos/_MG_7306.jpg";
+import ImgSrc from '../../../../public/webImgs/IMG_2942.jpeg'
 
 export const IntroductionSection = () => {
   const [isCardModalOpen, setIsCardModalOpen] = useState<boolean>(false);
@@ -63,12 +62,12 @@ export const IntroductionSection = () => {
           alt="about us"
           className={styles.bgImage}
           height={1200}
-          src={imgSrc}
+          src={ImgSrc}
           width={1200}
         />
         <div className={styles.blueBg} />
-        <TopShapeIcon className={styles.topIcon}/>
-        <BottomShapeIcon className={styles.bottomIcon} />
+        {/* <TopShapeIcon className={styles.topIcon}/> */}
+        {/* <BottomShapeIcon className={styles.bottomIcon} /> */}
         <div className={styles.content}>
           <div className={styles.title}>
             <h1 className={styles.aboutUsTitle}>
@@ -89,7 +88,7 @@ export const IntroductionSection = () => {
             <div className={styles.buttonWrapper}>
               <Button
                 btnStyle={ButtonVariants.PRIMARY}
-                onClick={handleOnCardClick}
+                onBtnClick={handleOnCardClick}
               >
                 Show Reel
               </Button>

@@ -5,9 +5,7 @@ import VerticalLine from "../../../assets/LineVertical.svg";
 import HorizontalLine from "../../../assets/LineHorizental.svg";
 import { useEffect, useRef } from "react";
 
-const imgSrc =
-  "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Photos/_MG_3621.jpg";
-
+import { CardImgSrc } from "@/app/constants/mainPage";
 export const KeyServicesSection = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
 
@@ -62,7 +60,7 @@ export const KeyServicesSection = () => {
                 alt="about us"
                 className={styles.cardBgImage}
                 height={1200}
-                src={imgSrc}
+                src={CardImgSrc}
                 width={1200}
               />
               <div className={styles.cardDecription}>{item.content}</div>

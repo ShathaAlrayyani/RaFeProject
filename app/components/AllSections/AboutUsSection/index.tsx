@@ -1,9 +1,8 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import styles from "./AboutUsSection.module.css";
+import { AboutUsImgSrc } from "@/app/constants/mainPage";
 
-const imgSrc =
-  "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Photos/_MG_3533.jpg";
 
 export const AboutUsSection = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -44,9 +43,9 @@ export const AboutUsSection = () => {
       <Image
         alt="about us"
         className={styles.bgImage}
-        height={1200}
-        src={imgSrc}
-        width={1400}
+        height={1000}
+        src={AboutUsImgSrc}
+        width={1000}
       />
       <div className={styles.aboutUsContent}>
         <h1 className={styles.title}>About</h1>

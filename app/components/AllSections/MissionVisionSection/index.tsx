@@ -2,8 +2,7 @@ import Image from "next/image";
 // import TeamImg from "../../../assets/photos/_MG_3613.jpg"
 import styles from "./MissionVisionSection.module.css";
 import { useEffect, useRef } from "react";
-const imgSrc =
-  "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Photos/_MG_3366.jpg";
+import { MissionImgSrc } from "@/app/constants/mainPage";
 
 export const MissionVisionSection = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -44,7 +43,7 @@ export const MissionVisionSection = () => {
         alt="about us"
         className={styles.bgImg}
         height={1200}
-        src={imgSrc}
+        src={MissionImgSrc}
         width={1200}
       />
       <div className={styles.sectionWrapper}>
