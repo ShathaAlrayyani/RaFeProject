@@ -7,7 +7,7 @@ export default function OurWork() {
   return (
     <>
       <main>
-        <Header acivePage="Our Work" />
+        <Header activePage="Our Work" />
         <main className="appWrapper">
           <SummarySection />
           <div className={styles.desktopView}>

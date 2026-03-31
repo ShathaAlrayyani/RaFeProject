@@ -1,13 +1,14 @@
 import { useState } from "react";
 import RaLogoSvg from "../../assets/RaLogo2.svg";
 import styles from "./Header.module.css";
-import { Button, ButtonVarients } from "../Button";
+import { Button, ButtonVariants } from "../Button";
 import Link from "next/link";
 import Image from "next/image";
-// import ImgSrc from "../../assets/logoExtra/bgImg.png";
+import { LogoImgSrc } from "@/app/constants/mainPage";
+
 
 interface IHeaderProps {
-  acivePage?: string;
+  activePage?: string;
 }
 
 export const headerButtons = [
@@ -21,8 +22,8 @@ export const headerButtons = [
   },
 ];
 
-export const Header = ({ acivePage }: IHeaderProps) => {
-  const [aciveTab, setActiveTab] = useState<string | undefined>(acivePage);
+export const Header = ({ activePage }: IHeaderProps) => {
+  const [activeTab, setActiveTab] = useState<string | undefined>(activePage);
 
   const handleActiveTab = (title: any) => {
     setActiveTab(title);
@@ -30,21 +31,22 @@ export const Header = ({ acivePage }: IHeaderProps) => {
 
   return (
     <div className={styles.headerComponent}>
-      {/* <Image
-        alt="about us"
-        className={styles.bgImg}
-        height={300}
-        src={ImgSrc}
-        width={500}
-      /> */}
-      <RaLogoSvg className={styles.svgIcon} />
+      <div className={styles.imgWrapper}>
+        <Image
+          alt="about us"
+          className={styles.bgImg}
+          height={300}
+          src={LogoImgSrc}
+          width={500}
+        />
+      </div>
       <div className={styles.headerSections}>
         {headerButtons.map((section, index) => (
           <Button
-            btnStyle={ButtonVarients.HEADER_BUTTON}
-            isActiveTab={aciveTab == section.title ? true : false}
+            btnStyle={ButtonVariants.HEADER_BUTTON}
+            isActiveTab={activeTab == section.title ? true : false}
             key={index}
-            onClick={() => handleActiveTab(section.title)}
+            onBtnClick={() => handleActiveTab(section.title)}
           >
             <Link href={section.link}>{section.title}</Link>
           </Button>

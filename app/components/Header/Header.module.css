@@ -25,11 +25,13 @@
 }
 
 .bgImg {
-  position: absolute;
-  object-fit: cover;
-  top: 0;
-  left: 0;
   width: 100%;
-  z-index: -1;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .imgWrapper{
+    width: 40px;
+    height: 40px;
+  }
 }

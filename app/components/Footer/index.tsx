@@ -6,10 +6,8 @@ import TwoLinesIcon from "../../assets/TwoLines.svg";
 import EmailIcon from "../../assets/EmailIcon.svg";
 import PhoneIcon from "../../assets/PhoneIcon.svg";
 import Link from "next/link";
-import { socialMediaData } from "@/app/constants/mainPage";
+import { LogoImgTextSrc, socialMediaData } from "@/app/constants/mainPage";
 
-const imgSrc =
-  "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Logo/raCreativeWhite.png";
 
 export const Footer = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -21,9 +19,9 @@ export const Footer = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add(styles.visible);
+            entry.target.classList.add(`${styles.visible}`);
           } else {
-            entry.target.classList.remove(styles.visible);
+            entry.target.classList.remove(`${styles.visible}`);
           }
         });
       },
@@ -51,7 +49,7 @@ export const Footer = () => {
           alt="about us"
           className={styles.footerImage}
           height={1200}
-          src={imgSrc}
+          src={LogoImgTextSrc}
           width={1400}
         />
         <div className={styles.footerContent}>

@@ -2,7 +2,7 @@ import classNames from "classnames";
 import style from "./Button.module.css";
 import { MouseEvent } from "react";
 
-export enum ButtonVarients {
+export enum ButtonVariants {
   PRIMARY = "primary",
   SECONDARY = "secondary",
   TAB_BUTTON = "tabButton",
@@ -10,24 +10,24 @@ export enum ButtonVarients {
 }
 
 interface IButtonProps {
-  btnStyle: ButtonVarients;
+  btnStyle: ButtonVariants;
   children: any;
   isActiveTab?: boolean;
-  onClick: (e: MouseEvent<HTMLButtonElement>) => void;
+  onBtnClick: (e: MouseEvent<HTMLButtonElement>) => void;
 }
 
 export const Button = ({
   btnStyle,
   children,
   isActiveTab = false,
-  onClick,
+  onBtnClick,
 }: IButtonProps) => {
   return (
     <button
       className={classNames(style[btnStyle], {
-        [style.activeTab]: isActiveTab,
+        [`${style.activeTab}`]: isActiveTab,
       })}
-      onClick={onClick}
+      onClick={onBtnClick}
     >
       {children}
     </button>

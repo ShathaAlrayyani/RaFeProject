@@ -1,4 +1,4 @@
-import { Button, ButtonVarients } from "../Button";
+import { Button, ButtonVariants } from "../Button";
 import classNames from "classnames";
 import styles from "./Tabs.module.css";
 import { useState } from "react";
@@ -21,14 +21,14 @@ export const Tabs = () => {
         {tabsContent.map((tabData, index) => (
           <div
             className={classNames(styles.buttonContainer, {
-              [styles.activeTab]: activeTab === tabData.tabName,
+              [`${styles.activeTab}`]: activeTab === tabData.tabName,
             })}
             key={index}
           >
             <Button
-              btnStyle={ButtonVarients.TAB_BUTTON}
+              btnStyle={ButtonVariants.TAB_BUTTON}
               isActiveTab={activeTab === tabData.tabName}
-              onClick={() => handleTabClick(tabData.tabName)}
+              onBtnClick={() => handleTabClick(tabData.tabName)}
             >
               {tabData.tabName}
             </Button>

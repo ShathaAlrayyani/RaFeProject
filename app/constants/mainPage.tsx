@@ -5,10 +5,28 @@ import PicIcon from "../assets/tvWithPeople.svg";
 import PicturesIcon from "../assets/picturesIcon.svg";
 import ServiceIcon from "../assets/servicesIcon.svg";
 
-import InstagramImg from '../assets/InstagramSvg.svg'
-import YoutubeImg from '../assets/coolYoutubeSvg.svg'
-import TikTokImg from '../assets/tiktok_social.svg'
-import FaceBookImg from '../assets/facebook_icon.svg'
+import InstagramImg from "../assets/InstagramSvg.svg";
+import YoutubeImg from "../assets/coolYoutubeSvg.svg";
+import TikTokImg from "../assets/tiktok_social.svg";
+import FaceBookImg from "../assets/facebook_icon.svg";
+
+import AboutUsImg from "../../public/webImgs/IMG_2944.jpeg";
+import LogoImg from "../../public/assets/logoRa.png";
+import IntroImg from '../../public/webImgs/IMG_2942.jpeg'
+import MissionImg from'../../public/webImgs/IMG_2932.jpeg'
+import CardImg from '../../public/webImgs/IMG_2923.jpeg'
+import TeamImg from '../../public/webImgs/Picture4.png'
+import CompanyImg from '../../public/webImgs/Picture6.png'
+import LogoImgText from '../../public/assets/RaCREATIVES.png'
+
+export const AboutUsImgSrc = AboutUsImg;
+export const LogoImgSrc = LogoImg;
+export const MissionImgSrc = MissionImg
+export const CardImgSrc = CardImg
+export const IntroImgSrc = IntroImg
+export const TeamImgSrc = TeamImg
+export const CompanyImgSrc = CompanyImg
+export const LogoImgTextSrc = LogoImgText
 
 export interface KeyService {
   content: string;
@@ -60,7 +78,7 @@ export const sliderBreakPoints = (cardsNumber: number) => ({
     slidesPerView: cardsNumber < 1.25 ? cardsNumber : 1.25,
   },
   400: {
-    slidesPerView: cardsNumber < 1.50 ? cardsNumber : 1.50,
+    slidesPerView: cardsNumber < 1.5 ? cardsNumber : 1.5,
   },
   540: {
     slidesPerView: cardsNumber < 2 ? cardsNumber : 2,
@@ -71,73 +89,83 @@ export const sliderBreakPoints = (cardsNumber: number) => ({
   680: {
     slidesPerView: cardsNumber < 2.5 ? cardsNumber : 2.5,
   },
-})
+});
 
 export const tvCommercialsData = [
   {
     description: "",
     id: "marouf_commercials",
-    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/Marouf.jpg",
+    imgSrc:
+      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/Marouf.jpg",
     title: "Marouf Commercials",
   },
   {
     description: "",
     id: "nafeeseh_commercials",
-    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/Nafesa.jpg",
+    imgSrc:
+      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/Nafesa.jpg",
     title: "Nafesseh Commercials",
   },
   {
     description: "",
     id: "mandi_commercials",
-    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/MandiRice.png",
+    imgSrc:
+      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/MandiRice.png",
     title: "Mandi Rice Commercials",
   },
   {
     description: "",
     id: "eisberg_commercials",
-    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/Eisberg2.png%20.jpg",
+    imgSrc:
+      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/Eisberg2.png%20.jpg",
     title: "Eisberg Commercials",
-  }
+  },
 ];
 
 export const documentariesData = [
   {
     description: "",
     id: "irth",
-    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Documentaries/Irth.png",
+    imgSrc:
+      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Documentaries/Irth.png",
     title: "Irth Documentary",
-  }
+  },
 ];
 
 export const productionsData = [
   {
     description: "",
     id: "ra_sketches",
-    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/Rub_Banadora.jpg",
+    imgSrc:
+      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/Rub_Banadora.jpg",
     title: "Ra Sketches",
   },
   {
     description: "",
     id: "bring_it_on",
-    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/BringWhatYouHave.jpg",
+    imgSrc:
+      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/BringWhatYouHave.jpg",
     title: "Hat Eli Andak",
   },
   {
     description: "",
     id: "vice_versa",
-    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/Al3ks_Sa7e7.jpg",
+    imgSrc:
+      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/Al3ks_Sa7e7.jpg",
     title: "Al-Aks Sahih",
   },
   {
     description: "",
     id: "the_fear_book",
-    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/BookOfFear.png",
+    imgSrc:
+      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/BookOfFear.png",
     title: "The Fear Book",
   },
   {
     description: "",
     id: "celebrity_quiz",
-    imgSrc: "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/CQ.jpg",
+    imgSrc:
+      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/CQ.jpg",
     title: "Celebrity Quiz",
   },
 ];
@@ -145,41 +173,41 @@ export const productionsData = [
 export const tabsContent = [
   {
     data: productionsData,
-    id:"productions",
+    id: "productions",
     tabName: "Productions",
   },
   {
     data: tvCommercialsData,
-    id:"tv_Commercials",
+    id: "tv_Commercials",
     tabName: "TV Commercials",
   },
   {
     data: documentariesData,
-    id:"documentaries",
+    id: "documentaries",
     tabName: "Documentaries",
   },
   {
     data: [],
-    id:"library",
+    id: "library",
     tabName: "Library",
   },
 ];
 
 export const socialMediaData = [
   {
-    icon: <InstagramImg/>,
-    link:'https://www.instagram.com/ra.creativesjo/?igshid=YmMyMTA2M2Y%3D',
+    icon: <InstagramImg />,
+    link: "https://www.instagram.com/ra.creativesjo/?igshid=YmMyMTA2M2Y%3D",
   },
   {
-    icon: <YoutubeImg/>,
-    link:'https://www.youtube.com/@racreativesjo',
+    icon: <YoutubeImg />,
+    link: "https://www.youtube.com/@racreativesjo",
   },
-  {
-    icon: <FaceBookImg/>,
-    link:'https://www.facebook.com/ra.creativesjo/',
-  },
-  {
-    icon: <TikTokImg/>,
-    link:'https://www.tiktok.com/@ra.creativesjo?_t=8pnWyafSXtF&_r=1',
-  },
-]
+  // {
+  //   icon: <FaceBookImg />,
+  //   link: "https://www.facebook.com/ra.creativesjo/",
+  // },
+  // {
+  //   icon: <TikTokImg />,
+  //   link: "https://www.tiktok.com/@ra.creativesjo?_t=8pnWyafSXtF&_r=1",
+  // },
+];

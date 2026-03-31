@@ -17,8 +17,8 @@ export const NoDataPlaceholder = ({
 }: INoDataPlaceholderProps) => {
   return (
     <div className={styles.noDataPlaceholder}>
-      <NoDataIcon className={styles.sectioIcon}/>
-      <div className={classNames(styles.contentWrapper, {[styles.whiteText]:isWhite, [styles.mobileView]: isMobile})}>
+      <NoDataIcon className={styles.sectionIcon}/>
+      <div className={classNames(styles.contentWrapper, {[`${styles.whiteText}`]:isWhite, [`${styles.mobileView}`]: isMobile})}>
         <h1 className={styles.title}>{noDataHeader}</h1>
         <p className={styles.content}>{noDataText}</p>
       </div>

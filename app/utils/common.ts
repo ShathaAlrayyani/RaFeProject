@@ -1,11 +1,11 @@
 export const extractId = (path: string): string => {
   const parts = path.split("/");
-  return parts[parts.length - 1];
+  return parts[parts.length - 1] || '';
 };
 
 export const extractSectionName = (path: string): string => {
   const parts = path.split("/");
-  return parts[parts.length - 2];
+  return parts[parts.length - 2] || '';
 };
 
 export const filterDataById = (

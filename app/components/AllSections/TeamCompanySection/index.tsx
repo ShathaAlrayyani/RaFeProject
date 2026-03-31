@@ -1,9 +1,7 @@
 import { useEffect, useRef } from "react";
 import styles from "./TeamCompanySection.module.css";
 import Image from "next/image";
-
-const teamImg1 = "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Photos/_MG_3621.jpg";
-const teamImg2 = "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Photos/_MG_3616.jpg";
+import { CompanyImgSrc, TeamImgSrc } from "@/app/constants/mainPage";
 
 export const TeamCompanySection = () => {
   const sectionRef = useRef<HTMLDivElement | null>(null);
@@ -15,9 +13,9 @@ export const TeamCompanySection = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add(styles.visible);
+            entry.target.classList.add(`${styles.visible}`);
           } else {
-            entry.target.classList.remove(styles.visible);
+            entry.target.classList.remove(`${styles.visible}`);
           }
         });
       },
@@ -54,7 +52,7 @@ export const TeamCompanySection = () => {
             alt="about us"
             className={styles.topSectionImg}
             height={1200}
-            src={teamImg1}
+            src={TeamImgSrc}
             width={1200}
           />
           <div className={styles.topOrangeSquare} />
@@ -66,7 +64,7 @@ export const TeamCompanySection = () => {
             alt="about us"
             className={styles.bottomSectionImg}
             height={1200}
-            src={teamImg2}
+            src={CompanyImgSrc}
             width={1200}
           />
           <div className={styles.bottomOrangeSquare} />
