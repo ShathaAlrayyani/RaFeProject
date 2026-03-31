@@ -25,7 +25,7 @@ export const Button = ({
   return (
     <button
       className={classNames(style[btnStyle], {
-        [style.activeTab]: isActiveTab,
+        [`${style.activeTab}`]: isActiveTab,
       })}
       onClick={onBtnClick}
     >

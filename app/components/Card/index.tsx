@@ -1,6 +1,6 @@
 import styles from "./Card.module.css";
 import Image from "next/image";
-import NoImgPlaceholder from "../../assets/noImg2.svg";
+// import NoImgPlaceholder from "../../assets/noImg2.svg";
 import { LoadingSinner } from "../LoadingSinner";
 
 interface IAppCardProps {
@@ -33,7 +33,7 @@ export const AppCard = ({
               width={1200}
             />
           ) : (
-            <NoImgPlaceholder className={styles.cardIcon} />
+            {/* <NoImgPlaceholder className={styles.cardIcon} /> */}
           )}
           <div className={styles.cardContent}>
             <h1 className={styles.cardTitle}>{title}</h1>

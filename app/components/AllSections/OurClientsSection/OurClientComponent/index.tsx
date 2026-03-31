@@ -21,9 +21,9 @@ export const OurClientComponent = ({
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add(styles.visible);
+            entry.target.classList.add(`${styles.visible}`);
           } else {
-            entry.target.classList.remove(styles.visible);
+            entry.target.classList.remove(`${styles.visible}`);
           }
         });
       },

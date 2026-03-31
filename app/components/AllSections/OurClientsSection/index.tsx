@@ -1,7 +1,7 @@
 import styles from "./OurClientsSection.module.css";
 import { OurClientComponent } from "./OurClientComponent";
-import TopShapeIcon from "../../../assets/orangeCowIcon1.svg";
-import BottomShapeIcon from "../../../assets/orangeCowIcon2.svg";
+// import TopShapeIcon from "../../../assets/orangeCowIcon1.svg";
+// import BottomShapeIcon from "../../../assets/orangeCowIcon2.svg";
 import { ourJorClients, ourUaeClients } from "@/app/constants/ourClients";
 import { LoadingSinner } from "../../LoadingSinner";
 
@@ -11,7 +11,7 @@ export const OurClientsSection = () => {
     <div
       className={styles.ourClientsSectionWrapper}
     >
-      <TopShapeIcon className={styles.topIcon}/>
+      {/* <TopShapeIcon className={styles.topIcon}/> */}
       {!!!ourJorClients? (
         <LoadingSinner isWhite/>
       ) : (
@@ -28,7 +28,7 @@ export const OurClientsSection = () => {
         title={"OUR CLIENTS IN UAE"}
       />
       )}
-      <BottomShapeIcon className={styles.bottomIcon} />
+      {/* <BottomShapeIcon className={styles.bottomIcon} /> */}
     </div>
   );
 };

@@ -1,6 +1,5 @@
 "use client";
 import { Fragment } from "react";
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import {
   AboutUsSection,
   Footer,

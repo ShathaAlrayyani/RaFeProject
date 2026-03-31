@@ -11,13 +11,13 @@ export const LoadingSinner = ({ isWhite = false, isSmall=false }: ILoadingSinner
     <div className={styles.spinnerWrapper}>
       <div
         className={classNames(styles.spinner, {
-          [styles.whiteSpinner]: isWhite,
-          [styles.smallSpinner]: isSmall,
+          [`${styles.whiteSpinner}`]: isWhite,
+          [`${styles.smallSpinner}`]: isSmall,
         })}
       >
         <div
           className={classNames(styles.innerCircle, {
-            [styles.whiteSpinner]: isWhite,
+            [`${styles.whiteSpinner}`]: isWhite,
           })}
         />
       </div>

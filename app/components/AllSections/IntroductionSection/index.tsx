@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { VideoBg } from "../../VideoBg";
 import { AppModal } from "../../Modal";
 import { Button, ButtonVariants } from "../../Button";
-import TopShapeIcon from "../../../assets/orangeCowIcon1.svg";
-import BottomShapeIcon from "../../../assets/orangeCowIcon2.svg";
+// import TopShapeIcon from "../../../assets/orangeCowIcon1.svg";
+// import BottomShapeIcon from "../../../assets/orangeCowIcon2.svg";
 
 import ImgSrc from '../../../../public/webImgs/IMG_2942.jpeg'
 
@@ -20,9 +20,9 @@ export const IntroductionSection = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add(styles.visible);
+            entry.target.classList.add(`${styles.visible}`);
           } else {
-            entry.target.classList.remove(styles.visible);
+            entry.target.classList.remove(`${styles.visible}`);
           }
         });
       },
