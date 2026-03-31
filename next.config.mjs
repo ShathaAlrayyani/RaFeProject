@@ -13,14 +13,14 @@ const nextConfig = {
   },
   // turbopack: {},
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: process.env.DIGITAL_OCEAN_URL,
-        port: "",
-        pathname: "/**",
-      },
-    ],
+    // remotePatterns: [
+    //   {
+    //     protocol: "https",
+    //     hostname: process.env.DIGITAL_OCEAN_URL,
+    //     port: "",
+    //     pathname: "/**",
+    //   },
+    // ],
   },
 };
 

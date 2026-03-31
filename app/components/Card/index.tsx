@@ -1,12 +1,12 @@
 import styles from "./Card.module.css";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 // import NoImgPlaceholder from "../../assets/noImg2.svg";
 import { LoadingSinner } from "../LoadingSinner";
 
 interface IAppCardProps {
   description: string;
   id: any;
-  imgSrc: string;
+  imgSrc: string | StaticImageData;
   onClick?: () => void;
   title: string;
 }

@@ -12,21 +12,25 @@ import FaceBookImg from "../assets/facebook_icon.svg";
 
 import AboutUsImg from "../../public/webImgs/IMG_2944.jpeg";
 import LogoImg from "../../public/assets/logoRa.png";
-import IntroImg from '../../public/webImgs/IMG_2942.jpeg'
-import MissionImg from'../../public/webImgs/IMG_2932.jpeg'
-import CardImg from '../../public/webImgs/IMG_2923.jpeg'
-import TeamImg from '../../public/webImgs/Picture4.png'
-import CompanyImg from '../../public/webImgs/Picture6.png'
-import LogoImgText from '../../public/assets/RaCREATIVES.png'
+import IntroImg from "../../public/webImgs/IMG_2942.jpeg";
+import MissionImg from "../../public/webImgs/IMG_2932.jpeg";
+import CardImg from "../../public/webImgs/IMG_2923.jpeg";
+import TeamImg from "../../public/webImgs/Picture4.png";
+import CompanyImg from "../../public/webImgs/Picture6.png";
+import LogoImgText from "../../public/assets/RaCREATIVES.png";
+import TVCommercialsImg from '../../public/webImgs/IMG_2940.jpeg'
+import OurWorkImg from '../../public/webImgs/IMG_2926.jpeg'
 
 export const AboutUsImgSrc = AboutUsImg;
 export const LogoImgSrc = LogoImg;
-export const MissionImgSrc = MissionImg
-export const CardImgSrc = CardImg
-export const IntroImgSrc = IntroImg
-export const TeamImgSrc = TeamImg
-export const CompanyImgSrc = CompanyImg
-export const LogoImgTextSrc = LogoImgText
+export const MissionImgSrc = MissionImg;
+export const CardImgSrc = CardImg;
+export const IntroImgSrc = IntroImg;
+export const TeamImgSrc = TeamImg;
+export const CompanyImgSrc = CompanyImg;
+export const LogoImgTextSrc = LogoImgText;
+export const TVCommercialsImgSrc = TVCommercialsImg
+export const OurWorkImgSrc = OurWorkImg
 
 export interface KeyService {
   content: string;
@@ -95,29 +99,25 @@ export const tvCommercialsData = [
   {
     description: "",
     id: "marouf_commercials",
-    imgSrc:
-      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/Marouf.jpg",
+    imgSrc: TVCommercialsImgSrc,
     title: "Marouf Commercials",
   },
   {
     description: "",
     id: "nafeeseh_commercials",
-    imgSrc:
-      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/Nafesa.jpg",
+    imgSrc: TVCommercialsImgSrc,
     title: "Nafesseh Commercials",
   },
   {
     description: "",
     id: "mandi_commercials",
-    imgSrc:
-      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/MandiRice.png",
+    imgSrc: TVCommercialsImgSrc,
     title: "Mandi Rice Commercials",
   },
   {
     description: "",
     id: "eisberg_commercials",
-    imgSrc:
-      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/Eisberg2.png%20.jpg",
+    imgSrc:TVCommercialsImgSrc,
     title: "Eisberg Commercials",
   },
 ];
@@ -126,8 +126,7 @@ export const documentariesData = [
   {
     description: "",
     id: "irth",
-    imgSrc:
-      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Documentaries/Irth.png",
+    imgSrc: MissionImgSrc,
     title: "Irth Documentary",
   },
 ];
@@ -136,36 +135,31 @@ export const productionsData = [
   {
     description: "",
     id: "ra_sketches",
-    imgSrc:
-      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/Rub_Banadora.jpg",
+    imgSrc: CompanyImgSrc,
     title: "Ra Sketches",
   },
   {
     description: "",
     id: "bring_it_on",
-    imgSrc:
-      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/BringWhatYouHave.jpg",
+    imgSrc: CompanyImgSrc,
     title: "Hat Eli Andak",
   },
   {
     description: "",
     id: "vice_versa",
-    imgSrc:
-      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/Al3ks_Sa7e7.jpg",
+    imgSrc: CompanyImgSrc,
     title: "Al-Aks Sahih",
   },
   {
     description: "",
     id: "the_fear_book",
-    imgSrc:
-      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/BookOfFear.png",
+    imgSrc: CompanyImgSrc,
     title: "The Fear Book",
   },
   {
     description: "",
     id: "celebrity_quiz",
-    imgSrc:
-      "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Productions/CQ.jpg",
+    imgSrc: CompanyImgSrc,
     title: "Celebrity Quiz",
   },
 ];
