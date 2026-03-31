@@ -31,7 +31,7 @@ export const Header = ({ activePage }: IHeaderProps) => {
 
   return (
     <div className={styles.headerComponent}>
-      <div >
+      <div className={styles.imgWrapper}>
         <Image
           alt="about us"
           className={styles.bgImg}
