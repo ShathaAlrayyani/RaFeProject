@@ -30,8 +30,8 @@ export const OurProductPage = ({ sectionName }: IOurProductPageProps) => {
   const pathname = usePathname();
 
   const getShowDetails = async () => {
-    const showId = extractId(pathname);
-    const url = getURL(sectionName);
+    const showId: string = extractId(pathname);
+    const url: string = getURL(sectionName);
     if (url) {
       const res = await fetch(url);
       const data = await res.json();

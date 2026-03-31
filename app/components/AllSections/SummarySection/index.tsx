@@ -1,8 +1,6 @@
 import Image from "next/image";
 import styles from "./SummarySection.module.css";
-
-const imgSrc =
-  "https://ra-project.nyc3.cdn.digitaloceanspaces.com/Photos/_MG_3366.jpg";
+import { OurWorkImgSrc } from "@/app/constants/mainPage";
 
 export const SummarySection = () => {
   return (
@@ -19,7 +17,7 @@ export const SummarySection = () => {
         alt="about us"
         className={styles.bgImg}
         height={1200}
-        src={imgSrc}
+        src={OurWorkImgSrc}
         width={1200}
       />
     </div>

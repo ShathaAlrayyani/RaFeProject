@@ -18,13 +18,14 @@ export const filterDataById = (
 };
 
 export const getURL = (sectionName: string): string => {
+  console.log("🚀 ~ getURL ~ sectionName:", sectionName)
   switch (sectionName) {
     case 'productions':
-      return "https://racreativesjo.com/api/productions"
+      return "/api/productions"
     case 'tv_Commercials':
-      return "https://racreativesjo.com/api/tvCommercials"
+      return "/api/tvCommercials"
     case 'documentaries':
-      return "https://racreativesjo.com/api/documentaries"
+      return "/api/documentaries"
     default:
       return "";
   }

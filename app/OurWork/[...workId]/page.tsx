@@ -2,12 +2,13 @@
 import { Footer, Header } from "@/app/components";
 import { OurProductPage } from "@/app/components/OurWork";
 import { extractSectionName } from "@/app/utils/common";
+import { StaticImageData } from "next/image";
 import { usePathname } from "next/navigation";
 
 export interface ShowDetailsProps {
   description: string;
   id: string;
-  imgSrc: string;
+  imgSrc: string | StaticImageData;
   showName: string;
   videos: string[];
 }

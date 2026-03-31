@@ -3,7 +3,7 @@
         {
             "description": "The Ben Ma’rouf Coffee ad campaign is a celebration of elegance and heartfelt storytelling, capturing the rich, full-bodied essence of coffee that enhances life’s moments. Through a series of thoughtfully crafted ads, we invite you to experience the passion and dedication that goes into every cup of Ben Ma’rouf. With each sip, we share the story of quality and care that has made our coffee a beloved part of daily life. So sit back, enjoy the warmth of our ads, and discover the secrets behind the coffee that brings comfort and inspiration to your day.",
             "id": "marouf_commercials",
-            "imgSrc": "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/Marouf.jpg",
+            "imgSrc": "/webImgs/IMG_2940.jpeg",
             "showName": "Marouf Commercials",
             "videos": [
                 {
@@ -26,7 +26,7 @@
         {
             "description": "In this remarkable ad for Nafeesa Sweets, we celebrate exquisite taste through the enchanting song, Ghar Al-Hala Mink. The melody perfectly captures the exceptional quality and unforgettable flavors that define Nafeesa’s sweets, reflecting the brand’s irresistible charm. With a blend of creativity and elegance, this ad weaves together the beauty of music and the delicate details of Nafeesa's luxurious confections. Indulge in this sweet symphony and let it transport you to a world of refined taste and timeless delight.",
             "id": "nafeeseh_commercials",
-            "imgSrc": "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/Nafesa.jpg",
+            "imgSrc": "/webImgs/IMG_2940.jpeg",
             "showName": "Nafesseh Sweets Commercials",
             "videos": [
                 {
@@ -39,7 +39,7 @@
         {
             "description": "Our Mandi Rice ad campaign shines with its creativity and distinctiveness, offering a glimpse into the exceptional experience of savoring Mandi rice through captivating visuals. These ads bring to life the rich, tender flavors of this beloved dish, highlighting the unique preparation that makes it perfect for both special occasions and everyday meals. Join us on a visual journey into the world of Mandi Rice, and discover how this flavorful dish can transform every meal into a memorable experience.",
             "id": "mandi_commercials",
-            "imgSrc": "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/MandiRice.png",
+            "imgSrc": "/webImgs/IMG_2940.jpeg",
             "showName": "Mandi Rice Commercials",
             "videos": [
                 {
@@ -62,7 +62,7 @@
         {
             "description": "In the heart of Wadi Rum, we captured the spirit of Eisberg TVs as a proudly local brand. This campaign highlights our commitment to quality and innovation, set against the stunning backdrop of our homeland's majestic desert. Eisberg TVs stand as a testament to local excellence, bringing you crystal-clear visuals and immersive sound, all inspired by the beauty and culture of our surroundings.",
             "id": "eisberg_commercials",
-            "imgSrc": "https://ra-project.nyc3.cdn.digitaloceanspaces.com/TVCommercials/Eisberg2.png%20.jpg",
+            "imgSrc": "/webImgs/IMG_2940.jpeg",
             "showName": "Eisberg Commercials",
             "videos": [
                 {
